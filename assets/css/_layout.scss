@@ -1,4 +1,6 @@
 
+
+
 /*=========================================*/
 /*layout*/
 /*=========================================*/
@@ -7,7 +9,7 @@
 /* 全体レイアウト                            */
 /*-------------------------------------------*/
 body {
-  font-size:1rem;
+  font-size:100%;
   color:#333;
 }
 
@@ -17,36 +19,65 @@ body {
   width:100%;
   margin:0;
 }
-.container,
-.header-container,
-.gnav-container,
-.footer-container {
+.container {
   width:1200px;
   margin:0 auto;
   position:relative;
 }
 
-
 /*-------------------------------------------*/
 /* ヘッダー
 /*-------------------------------------------*/
 .header {
-}
-.header-container {
-  padding:20px 0;
-}
-.header .site-name {
-  font-size:2.5em;
-  font-weight:bold;
+  // position: fixed;
+  // z-index: 100;
+  // top: 0;
+  background-color:#FFF;
+  transition: all 0.4s linear;
+  .header-container {
+    padding:10px 0;
+    transition: all 0.2s linear;
+  }
+  .header-mini-menu {
+    background-color: #F5F5F5;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    .items {
+      padding: 5px 10px;
+      .item {
+        &:hover {
+          .el-name {
+            text-decoration: underline;
+          }
+        }
+        .el-name {
+          font-weight:normal;
+        }
+      }
+    }
+  }
+  .site-name {
+    color:#888;
+    font-size:2.5em;
+    font-weight:bold;
+  }
 }
 
+.header.transform {
+  background-color:transparent;
+  .header-container {
+    height:0px;
+    padding-top:0;
+    padding-bottom:0;
+    overflow: hidden;
+  }
+}
 
 /*-------------------------------------------*/
 /* グローバルナビ
 /*-------------------------------------------*/
 .gnav {
   .gnav-container {
-    margin:0 auto;
   	text-align:left;
     &:after {
     	content:".";
@@ -91,12 +122,8 @@ body {
   }
 }
 
-
-/*-------------------------------------------*/
-/* コンテナ
-/*-------------------------------------------*/
-.container {
-  padding:40px 20px;
+.header.transform .gnav {
+  background-color:rgba(240,240,240,0.95);
 }
 
 
@@ -104,46 +131,14 @@ body {
 /* メイン
 /*-------------------------------------------*/
 .main {
-  float:left;
-  width: $main-width;
-  overflow:visible !important;
-  position:relative;
-  margin:0;
-  padding:0;
-  font-size:1rem;
-}
-
-
-/*-------------------------------------------*/
-/* サイドバー
-/*-------------------------------------------*/
-.sidebar {
-  float:right;
-  width: $sidebar-width;
-  font-size:1rem;
-  margin:0;
-}
-
-
-
-/*-------------------------------------------*/
-/* フッダー
-/*-------------------------------------------*/
-.footer {
-  clear:both;
-  background-color:#F5F5F5;
-  font-size:0.9rem;
-}
-.footer-container {
-  padding:20px;
-}
-.footer .copyright {
-  display:block;
-  font-size:10pt;
-  color:#666;
-  text-align:center;
-  margin:0;
-  padding:10px;
+  margin:20px;
+  margin-top:50px;
+  .main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 20px;
+  }
 }
 
 
@@ -160,11 +155,11 @@ body {
     list-style:none;
     display:inline-block;
     margin-bottom:2px;
-    .item:after {
+    &:after {
       content:' >';
       padding-left:3px;
       display:inline-block;
-      font-size:1rem;
+      font-size:1em;
       visibility: visible;
     }
     &.current {
@@ -172,9 +167,69 @@ body {
       &:after {
         content:'';
       }
-      strong {
-        font-weight:normal;
-      }
     }
+    &.current strong {
+      font-weight:normal;
+    }
+  }
+}
+
+
+/*-------------------------------------------*/
+/* サイドバー
+/*-------------------------------------------*/
+.sidebar {
+  float:right;
+  width: 20%;
+  font-size:1rem;
+  margin:10px 0 50px;
+  margin-left: 4%;
+  .sidebar-sticky {
+    position: sticky;
+    top: 60px;
+  }
+}
+
+
+/*-------------------------------------------*/
+/* コンテンツ                                */
+/*-------------------------------------------*/
+.content {
+  float:left;
+  width:76%;
+  overflow:visible !important;
+  position:relative;
+  margin:10px 0 50px;
+  padding:0;
+  font-size:1em;
+  /* clearfix処理 */
+  &:after {
+    content:".";
+    display:block;
+    height:0;
+    font-size:0;
+    clear:both;
+    visibility:hidden;
+  }
+}
+
+
+/*-------------------------------------------*/
+/* フッダー
+/*-------------------------------------------*/
+.footer {
+  clear:both;
+  background-color:#F5F5F5;
+  font-size:0.9rem;
+  .footer-container {
+    padding:20px;
+  }
+  .copyright {
+    display:block;
+    font-size:10pt;
+    color:#666;
+    text-align:center;
+    margin:0;
+    padding:10px;
   }
 }

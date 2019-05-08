@@ -1,7 +1,4 @@
 
-
-
-
 /*-------------------------------------------*/
 /* テキスト
 /*-------------------------------------------*/
@@ -14,8 +11,6 @@
 .ms-gothic {font-family:"ＭＳ Ｐゴシック", "MS P Gothic",  Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro" sans-serif !important;}
 
 
-
-
 .txt {
   font-size:1rem;
   line-height:1.5;
@@ -24,7 +19,6 @@
   font-size:1.1rem;
   line-height:1.5;
 }
-
 
 
 .t-supplement {
@@ -142,10 +136,6 @@ ul.notes.md-example li {
 }
 
 
-
-
-
-
 /* テキストサイズ
 -----------------------------------------*/
 @for $i from 10 through 60 {
@@ -172,47 +162,40 @@ ul.notes.md-example li {
 .lh1-9, .lh1-9 p {line-height:1.9 !important;}
 .lh2-0, .lh2-0 p {line-height:2.0 !important;}
 
-
-
-
 /* テキストカラー
 -----------------------------------------*/
 .white {color:#fff !important;}
 .yellow {color:#f90 !important;}
 .red {color:#f00 !important;}
 .t-red {color:#C63329 !important;}
-.t-red01 {color:#C00 !important;}
+.t-red-01 {color:#C00 !important;}
 .t-gray, .gray {color:#666 !important;}
-.t-gray333 {color:#333 !important;}
-.t-gray444 {color:#444 !important;}
-.t-gray555 {color:#555 !important;}
-.t-gray666 {color:#666 !important;}
-.t-gray999 {color:#999 !important;}
+.t-gray-333 {color:#333 !important;}
+.t-gray-444 {color:#444 !important;}
+.t-gray-555 {color:#555 !important;}
+.t-gray-666 {color:#666 !important;}
+.t-gray-999 {color:#999 !important;}
 .blue {color:#06f !important;}
 .t-blue {color:#4BAA9F !important;}
-.t-blue01 {color:#2A8CBE !important;}
-.t-blue02 {color:#23476F !important;}
+.t-blue-01 {color:#2A8CBE !important;}
+.t-blue-02 {color:#23476F !important;}
 .green {color:#060 !important;}
 .t-green {color:#90C030 !important;}
-.t-green01 {color:#53820F !important;}
-.t-green02 {color:#60B353 !important;}
+.t-green-01 {color:#53820F !important;}
+.t-green-02 {color:#60B353 !important;}
 .t-yellow-green {color:#779438 !important;}
 .brown {color:#600 !important;}
 .t-orange {color:#F7941D !important;}
-.t-orange01 {color:#E57B27 !important;}
+.t-orange-01 {color:#E57B27 !important;}
 
 .t-brown {color:#A0763F !important;}
 .t-brown-dark {color:#7D4F13 !important;}
 
-
-
 /* テキスト揃え
 -----------------------------------------*/
-.t-left {text-align:left !important;}
-.t-right {text-align:right !important;}
-.t-center {text-align:center !important;}
-
-
+.t-left { text-align: left !important; }
+.t-right { text-align: right !important; }
+.t-center { text-align: center !important; }
 
 /* バーチカルアライン
 -----------------------------------------*/
@@ -221,8 +204,6 @@ ul.notes.md-example li {
 .v-middle {vertical-align:middle !important;}
 .v-top {vertical-align:top !important;}
 .v-central {vertical-align:central !important;}
-
-
 
 /* テキスト装飾
 -----------------------------------------*/

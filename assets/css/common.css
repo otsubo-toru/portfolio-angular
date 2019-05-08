@@ -9,10 +9,21 @@
   font-size: 12px;
 }
 
+a,
+a:link,
+a:visited,
+a:active {
+  transition: all 0.2s ease-in-out;
+}
+
 /*=========================================*/
 /*reset
 /*=========================================*/
-body, div, p, h1, h2, h3, h4, h5, h6, table, tr, th, td, fieldset, pre, code, ul, ol, li, dl, dt, dd, textarea, blockquote, address, caption, form {
+body, div, p, h1, h2, h3, h4, h5, h6,
+table, tr, th, td, fieldset, pre, code,
+ul, ol, li, dl, dt, dd,
+textarea, blockquote, address, caption, form {
+  font-family: "ＭＳ Ｐゴシック", "MS P Gothic", Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro" sans-serif;
   font-family: "メイリオ", Meiryo, Osaka, sans-serif;
   list-style: none;
   line-height: 1.5;
@@ -283,7 +294,6 @@ a:visited,
 a:active {
   color: #005C9C;
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
 }
 
 a:visited {
@@ -294,18 +304,34 @@ a:hover {
   text-decoration: underline;
 }
 
+/* ボタン
+-----------------------------------------*/
+button {
+  padding: 8px 15px;
+  transition: all 0.2s ease-in-out;
+  background-color: #E5E5E5;
+  border: 1px solid #999;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+button:hover, button:active {
+  background-color: #E5F1FB;
+  border: 1px solid #2E90DE;
+}
+
 /* 画像
 -----------------------------------------*/
 img {
   border: 0;
   vertical-align: bottom;
+  max-width: 100%;
 }
 
 /* 見出し要素
 -----------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  margin: 0;
   position: relative;
 }
 
@@ -508,7 +534,7 @@ form .field_with_errors {
 /* 全体レイアウト                            */
 /*-------------------------------------------*/
 body {
-  font-size: 1rem;
+  font-size: 100%;
   color: #333;
 }
 
@@ -519,10 +545,7 @@ body {
   margin: 0;
 }
 
-.container,
-.header-container,
-.gnav-container,
-.footer-container {
+.container {
   width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -531,20 +554,55 @@ body {
 /*-------------------------------------------*/
 /* ヘッダー
 /*-------------------------------------------*/
-.header-container {
-  padding: 20px 0;
+.header {
+  background-color: #FFF;
+  transition: all 0.4s linear;
+}
+
+.header .header-container {
+  padding: 10px 0;
+  transition: all 0.2s linear;
+}
+
+.header .header-mini-menu {
+  background-color: #F5F5F5;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.header .header-mini-menu .items {
+  padding: 5px 10px;
+}
+
+.header .header-mini-menu .items .item:hover .el-name {
+  text-decoration: underline;
+}
+
+.header .header-mini-menu .items .item .el-name {
+  font-weight: normal;
 }
 
 .header .site-name {
+  color: #888;
   font-size: 2.5em;
   font-weight: bold;
+}
+
+.header.transform {
+  background-color: transparent;
+}
+
+.header.transform .header-container {
+  height: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
 }
 
 /*-------------------------------------------*/
 /* グローバルナビ
 /*-------------------------------------------*/
 .gnav .gnav-container {
-  margin: 0 auto;
   text-align: left;
 }
 
@@ -592,56 +650,23 @@ body {
   padding: 10px 20px;
 }
 
-/*-------------------------------------------*/
-/* コンテナ
-/*-------------------------------------------*/
-.container {
-  padding: 40px 20px;
+.header.transform .gnav {
+  background-color: rgba(240, 240, 240, 0.95);
 }
 
 /*-------------------------------------------*/
 /* メイン
 /*-------------------------------------------*/
 .main {
-  float: left;
-  width: 100%;
-  overflow: visible !important;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  font-size: 1rem;
+  margin: 20px;
+  margin-top: 50px;
 }
 
-/*-------------------------------------------*/
-/* サイドバー
-/*-------------------------------------------*/
-.sidebar {
-  float: right;
-  width: 20%;
-  font-size: 1rem;
-  margin: 0;
-}
-
-/*-------------------------------------------*/
-/* フッダー
-/*-------------------------------------------*/
-.footer {
-  clear: both;
-  background-color: #F5F5F5;
-  font-size: 0.9rem;
-}
-
-.footer-container {
-  padding: 20px;
-}
-
-.footer .copyright {
-  display: block;
-  font-size: 10pt;
-  color: #666;
-  text-align: center;
-  margin: 0;
-  padding: 10px;
+.main .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px;
 }
 
 /*-------------------------------------------*/
@@ -661,11 +686,11 @@ body {
   margin-bottom: 2px;
 }
 
-.breadcrumb .item .item:after {
+.breadcrumb .item:after {
   content: ' >';
   padding-left: 3px;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1em;
   visibility: visible;
 }
 
@@ -681,11 +706,72 @@ body {
   font-weight: normal;
 }
 
+/*-------------------------------------------*/
+/* サイドバー
+/*-------------------------------------------*/
+.sidebar {
+  float: right;
+  width: 20%;
+  font-size: 1rem;
+  margin: 10px 0 50px;
+  margin-left: 4%;
+}
+
+.sidebar .sidebar-sticky {
+  position: sticky;
+  top: 60px;
+}
+
+/*-------------------------------------------*/
+/* コンテンツ                                */
+/*-------------------------------------------*/
+.content {
+  float: left;
+  width: 76%;
+  overflow: visible !important;
+  position: relative;
+  margin: 10px 0 50px;
+  padding: 0;
+  font-size: 1em;
+  /* clearfix処理 */
+}
+
+.content:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/*-------------------------------------------*/
+/* フッダー
+/*-------------------------------------------*/
+.footer {
+  clear: both;
+  background-color: #F5F5F5;
+  font-size: 0.9rem;
+}
+
+.footer .footer-container {
+  padding: 20px;
+}
+
+.footer .copyright {
+  display: block;
+  font-size: 10pt;
+  color: #666;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
 /*===========================================*/
 /* 汎用クラス                                */
 /*===========================================*/
 /*-------------------------------------------*/
-/* コンテンツ
+/* ブロック関連
 /*-------------------------------------------*/
 .section {
   clear: both;
@@ -736,6 +822,14 @@ body {
   visibility: hidden;
 }
 
+.of-hidden {
+  overflow: hidden;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
 /*-------------------------------------------*/
 /* ボックス化                                */
 /*-------------------------------------------*/
@@ -763,6 +857,10 @@ body {
 
 #BODY .tcell:hover {
   text-decoration: none;
+}
+
+#BODY .flex {
+  display: flex;
 }
 
 /* 表示・非表示
@@ -803,37 +901,9 @@ body {
   position: fixed;
 }
 
-/*-------------------------------------------*/
-/* リンクをボックス化                        */
-/* ※リンクにしたい要素に指定。HTML5では不要 */
-/*-------------------------------------------*/
-.boxlink {
-  display: block;
-  position: relative;
-  transition: all 0.2s ease-in-out;
-}
-
-.boxlink:hover {
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-  zoom: 1;
-}
-
-.boxlink a {
-  position: absolute;
-  display: block;
-  z-index: 100;
-  top: 0px;
-  left: 0px;
-  text-indent: -1000em;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  background-color: #FFF;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  zoom: 1;
-  cursor: pointer;
+.sticky {
+  position: sticky;
+  top: 0;
 }
 
 /*-------------------------------------------*/
@@ -1259,7 +1329,7 @@ ul.notes.md-example li {
   color: #C63329 !important;
 }
 
-.t-red01 {
+.t-red-01 {
   color: #C00 !important;
 }
 
@@ -1267,23 +1337,23 @@ ul.notes.md-example li {
   color: #666 !important;
 }
 
-.t-gray333 {
+.t-gray-333 {
   color: #333 !important;
 }
 
-.t-gray444 {
+.t-gray-444 {
   color: #444 !important;
 }
 
-.t-gray555 {
+.t-gray-555 {
   color: #555 !important;
 }
 
-.t-gray666 {
+.t-gray-666 {
   color: #666 !important;
 }
 
-.t-gray999 {
+.t-gray-999 {
   color: #999 !important;
 }
 
@@ -1295,11 +1365,11 @@ ul.notes.md-example li {
   color: #4BAA9F !important;
 }
 
-.t-blue01 {
+.t-blue-01 {
   color: #2A8CBE !important;
 }
 
-.t-blue02 {
+.t-blue-02 {
   color: #23476F !important;
 }
 
@@ -1311,11 +1381,11 @@ ul.notes.md-example li {
   color: #90C030 !important;
 }
 
-.t-green01 {
+.t-green-01 {
   color: #53820F !important;
 }
 
-.t-green02 {
+.t-green-02 {
   color: #60B353 !important;
 }
 
@@ -1331,7 +1401,7 @@ ul.notes.md-example li {
   color: #F7941D !important;
 }
 
-.t-orange01 {
+.t-orange-01 {
   color: #E57B27 !important;
 }
 
@@ -1423,7 +1493,7 @@ ul.notes.md-example li {
   color: #555;
   font-size: 18px;
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 2px;
+  padding: 0 4px;
   margin: 0;
   border-radius: 3px;
   position: absolute;
@@ -1502,7 +1572,7 @@ ul.notes.md-example li {
   color: #FFF;
 }
 
-.bg-red01 {
+.bg-red-01 {
   background-color: #C00 !important;
   color: #FFF;
 }
@@ -1516,7 +1586,7 @@ ul.notes.md-example li {
   color: #FFF;
 }
 
-.bg-blue01 {
+.bg-blue-01 {
   background-color: #2A8CBE !important;
   color: #FFF;
 }
@@ -1526,7 +1596,7 @@ ul.notes.md-example li {
   color: #FFF;
 }
 
-.bg-orange01 {
+.bg-orange-01 {
   background-color: #F36A26 !important;
   color: #FFF;
 }
@@ -1536,7 +1606,7 @@ ul.notes.md-example li {
   color: #FFF;
 }
 
-.bg-green01 {
+.bg-green-01 {
   background-color: #53820F !important;
   color: #FFF;
 }
@@ -1551,12 +1621,12 @@ ul.notes.md-example li {
   color: #FFF;
 }
 
-.bg-gray01 {
+.bg-gray-01 {
   background-color: #333 !important;
   color: #FFF;
 }
 
-.bg-gray02 {
+.bg-gray-02 {
   background-color: #999 !important;
 }
 
@@ -4269,33 +4339,6 @@ ul.notes.md-example li {
   margin-right: 35px;
 }
 
-.g3-1, .g3-2, .g4-1, .g4-2, .g4-3, .g5-1, .g5-2, .g5-3, .g5-4, .g6-1, .g6-2, .g6-3, .g6-4, .g6-5,
-.g7-1, .g8-1, .g8-3, .g8-5, .g9-1, .g9-4, .g9-5, .g10-1, .g10-2, .g10-3, .g10-4, .g10-5, .g10-6, .g10-7, .g10-8, .g10-9, .g11-1,
-.g01, .g02, .g03, .g04, .g05, .g06, .g07, .g08, .g09, .g10, .g11, .g12 {
-  float: left;
-  position: relative;
-  overflow: visible;
-  padding: 0 5px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.g3-1:after, .g3-2:after, .g4-1:after, .g4-2:after, .g4-3:after,
-.g5-1:after, .g5-2:after, .g5-3:after, .g5-4:after,
-.g6-1:after, .g6-2:after, .g6-3:after, .g6-4:after, .g6-5:after,
-.g7-1:after, .g8-1:after, .g8-3:after, .g8-5:after, .g9-1:after, .g9-4:after, .g9-5:after,
-.g10-1:after, .g10-2:after, .g10-3:after, .g10-4:after, .g10-5:after, .g10-6:after, .g10-7:after, .g10-8:after, .g10-9:after, .g11-1:after,
-.g01:after, .g02:after, .g03:after, .g04:after, .g05:after, .g06:after, .g07:after, .g08:after, .g09:after, .g10:after, .g11:after, .g12:after {
-  content: ".";
-  display: block;
-  height: 0;
-  font-size: 0;
-  clear: both;
-  visibility: hidden;
-}
-
 .grid.gutter00 > .g3-1, .grid.gutter00 > .g3-2, .grid.gutter00 > .g4-1, .grid.gutter00 > .g4-2, .grid.gutter00 > .g4-3,
 .grid.gutter00 > .g5-1, .grid.gutter00 > .g5-2, .grid.gutter00 > .g5-3, .grid.gutter00 > .g5-4,
 .grid.gutter00 > .g6-1, .grid.gutter00 > .g6-2, .grid.gutter00 > .g6-3, .grid.gutter00 > .g6-4, .grid.gutter00 > .g6-5,
@@ -4349,6 +4392,30 @@ ul.notes.md-example li {
 .grid.gutter30 > .g01, .grid.gutter30 > .g02, .grid.gutter30 > .g03, .grid.gutter30 > .g04, .grid.gutter30 > .g05, .grid.gutter30 > .g06,
 .grid.gutter30 > .g07, .grid.gutter30 > .g08, .grid.gutter30 > .g09, .grid.gutter30 > .g10, .grid.gutter30 > .g11, .grid.gutter30 > .g12 {
   padding: 0 15px;
+}
+
+.grid .g3-1, .grid .g3-2, .grid .g4-1, .grid .g4-2, .grid .g4-3, .grid .g5-1, .grid .g5-2, .grid .g5-3, .grid .g5-4, .grid .g6-1, .grid .g6-2, .grid .g6-3, .grid .g6-4, .grid .g6-5,
+.grid .g7-1, .grid .g8-1, .grid .g8-3, .grid .g8-5, .grid .g9-1, .grid .g9-4, .grid .g9-5, .grid .g10-1, .grid .g10-2, .grid .g10-3, .grid .g10-4, .grid .g10-5, .grid .g10-6, .grid .g10-7, .grid .g10-8, .grid .g10-9, .grid .g11-1,
+.grid .g01, .grid .g02, .grid .g03, .grid .g04, .grid .g05, .grid .g06, .grid .g07, .grid .g08, .grid .g09, .grid .g10, .grid .g11, .grid .g12 {
+  float: left;
+  position: relative;
+  overflow: visible;
+  padding: 0 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.grid .g3-1:after, .grid .g3-2:after, .grid .g4-1:after, .grid .g4-2:after, .grid .g4-3:after, .grid .g5-1:after, .grid .g5-2:after, .grid .g5-3:after, .grid .g5-4:after, .grid .g6-1:after, .grid .g6-2:after, .grid .g6-3:after, .grid .g6-4:after, .grid .g6-5:after,
+.grid .g7-1:after, .grid .g8-1:after, .grid .g8-3:after, .grid .g8-5:after, .grid .g9-1:after, .grid .g9-4:after, .grid .g9-5:after, .grid .g10-1:after, .grid .g10-2:after, .grid .g10-3:after, .grid .g10-4:after, .grid .g10-5:after, .grid .g10-6:after, .grid .g10-7:after, .grid .g10-8:after, .grid .g10-9:after, .grid .g11-1:after,
+.grid .g01:after, .grid .g02:after, .grid .g03:after, .grid .g04:after, .grid .g05:after, .grid .g06:after, .grid .g07:after, .grid .g08:after, .grid .g09:after, .grid .g10:after, .grid .g11:after, .grid .g12:after {
+  content: ".";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
 }
 
 .grid .g3-1 {
