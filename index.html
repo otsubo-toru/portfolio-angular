@@ -23,7 +23,7 @@
   <link rel="stylesheet" type="text/css" href="./assets/js/swiper/swiper.css">
   <link rel="stylesheet" type="text/css" href="./assets/js/baguetteBox/baguetteBox.css">
   <link rel="stylesheet" type="text/css" href="./assets/js/iziModal/iziModal.css">
-  <link rel="stylesheet" type="text/css" href="./assets/js/magnific-popup.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./assets/js/magnific-popup.css"> -->
 
   <link rel="stylesheet" type="text/css" href="./assets/css/common.css">
 
@@ -31,108 +31,69 @@
 
 
 <body>
-  <div id="PAGE" class="page">
-    <app-header></app-header>
-    <app-gnav></app-gnav>
-    <div id="CONTAINER" class="container">
-        <!--@include('components.sidebar')-->
-  			<div id="MAIN" class="main">
-  				<article id="article" class="article">
-            <app-root></app-root>
-  				</article>
-        </div>
-  			<!-- <app-sidebar></app-sidebar> -->
-    </div>
-    <app-footer></app-footer>
+<div id="PAGE" class="page">
+  <app-header></app-header>
+  <app-gnav></app-gnav>
+  <div id="CONTAINER" class="container">
+      <!--@include('components.sidebar')-->
+			<div id="MAIN" class="main">
+				<article id="article" class="article">
+          <app-root></app-root>
+				</article>
+      </div>
+			<!-- <app-sidebar></app-sidebar> -->
   </div>
+  <app-footer></app-footer>
+</div>
 
-  <script type="text/javascript" src="./assets/js/jquery/jquery-3.4.0.min.js"></script>
-  <script type="text/javascript" src="./assets/js/jquery/cookie/jquery.cookie.js"></script>
-  <script type="text/javascript" src="./assets/js/jquery/csv/jquery.csv.js"></script>
-  <script type="text/javascript" src="./assets/js/jquery/fixHeight/jquery.fixHeight.js"></script>
-  <script type="text/javascript" src="./assets/js/jquery/smoothscroll/jquery.smoothscroll.js"></script>
-  <script type="text/javascript" src="./assets/js/jquery/pagetopBtn/jquery.pagetopBtn.js"></script>
-  <script type="text/javascript" src="./assets/js/highslide/highslide.js"></script>
-  <script type="text/javascript" src="./assets/js/jquery/spSwitch/jquery.spSwitch.js"></script>
-  <script type="text/javascript" src="./assets/js/jquery/loadComponents/jquery.loadComponents.js"></script>
-  <script type="text/javascript" src="./assets/js/jquery/tablehover/jquery.tablehover.js"></script>
-  <script type="text/javascript" src="./assets/js/jquery/magnificPopup/jquery.magnific-popup.min.js"></script>
-  <!-- <script type="text/javascript" src="./assets/js/jquery/selectLineup/jquery.selectLineup.js"></script> -->
-  <!-- <script type="text/javascript" src="./assets/js/jquery/selectLineup/jquery.selectLineupTC.js"></script> -->
-  <!-- <script type="text/javascript" src="./assets/js/jquery/mitumoriForm/jquery.sendMitumori.js"></script> -->
+<script type="text/javascript" src="./assets/js/jquery/jquery-3.4.0.min.js"></script>
+<script type="text/javascript" src="./assets/js/jquery/cookie/jquery.cookie.js"></script>
+<script type="text/javascript" src="./assets/js/jquery/csv/jquery.csv.js"></script>
+<script type="text/javascript" src="./assets/js/jquery/fixHeight/jquery.fixHeight.js"></script>
+<script type="text/javascript" src="./assets/js/jquery/smoothscroll/jquery.smoothscroll.js"></script>
+<script type="text/javascript" src="./assets/js/jquery/pagetopBtn/jquery.pagetopBtn.js"></script>
+<script type="text/javascript" src="./assets/js/highslide/highslide.js"></script>
+<script type="text/javascript" src="./assets/js/jquery/spSwitch/jquery.spSwitch.js"></script>
+<script type="text/javascript" src="./assets/js/jquery/loadComponents/jquery.loadComponents.js"></script>
+<script type="text/javascript" src="./assets/js/jquery/tablehover/jquery.tablehover.js"></script>
+<!-- <script type="text/javascript" src="./assets/js/jquery/magnificPopup/jquery.magnific-popup.min.js"></script> -->
+<!-- <script type="text/javascript" src="./assets/js/jquery/selectLineup/jquery.selectLineup.js"></script> -->
+<!-- <script type="text/javascript" src="./assets/js/jquery/selectLineup/jquery.selectLineupTC.js"></script> -->
+<!-- <script type="text/javascript" src="./assets/js/jquery/mitumoriForm/jquery.sendMitumori.js"></script> -->
 
-  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
-  <script type="text/javascript" src="./assets/js/aos/aos.js"></script>
-  <script type="text/javascript" src="./assets/js/swiper/swiper.js"></script>
-  <script type="text/javascript" src="./assets/js/baguetteBox/baguetteBox.js"></script>
-  <script type="text/javascript" src="./assets/js/iziModal/iziModal.js"></script>
+<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+<!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+<script type="text/javascript" src="./assets/js/aos/aos.js"></script>
+<script type="text/javascript" src="./assets/js/swiper/swiper.js"></script>
+<script type="text/javascript" src="./assets/js/baguetteBox/baguetteBox.js"></script>
+<script type="text/javascript" src="./assets/js/iziModal/iziModal.js"></script>
 
-  <script type="text/javascript" src="./assets/js/DataSelect.js"></script>
-  <script type="text/javascript" src="./assets/js/common.js"></script>
+<script type="text/javascript" src="./assets/js/DataSelect.js"></script>
+<script type="text/javascript" src="./assets/js/common.js"></script>
 
-  <script type="text/javascript">
-  $(function() {
-  	/*
-  	$(".magnific-popup-gallery").magnificPopup({
-  		delegate: '.magnific-popup',
-  		type: 'image',
-  		tLoading: 'Loading image #%curr%...',
-  		closeOnContentClick: true,
-  		closeBtnInside: false,
-  		fixedContentPos: true,
-  		gallery: {
-  			enabled: true,
-  			navigateByImgClick: true,
-  			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-  		},
-  		image: {
-  			verticalFit: true
-  		},
-  		midClick: true,
-  		removalDelay: 300,
-  		mainClass: 'my-mfp-slide-bottom'
-  	});
-  	*/
-  	$(".magnific-popup").magnificPopup({
-  		type: 'image',
-  		tLoading: 'Loading image #%curr%...',
-  		closeOnContentClick: true,
-  		closeBtnInside: false,
-  		fixedContentPos: true,
-  		image: {
-  			verticalFit: true
-  		},
-  		zoom: {
-  			enabled: true,
-  			duration: 300 // don't foget to change the duration also in CSS
-  		}
-  	});
+<script type="text/javascript">
+$(function() {
+  // $.ajax({
+  //   type: 'GET',
+  //   url: 'http://localhost:3000/api/items',
+  //   dataType: 'jsonp',
+  //   jsonpCallback: 'logResults',
+  //   error: function(json, status, error) {
+  //     console.log('error!: ');
+  //     console.log(json);
+  //     console.log(status);
+  //     console.log(error);
+  //   },
+  //   success: function(json) {
+  //     console.log('success!: ');
+  //     console.log(json);
+  //   },
+  // });
+  // function logResults(json){
+  //   console.log(json);
+  // }
 
-    $.ajax({
-      type: 'GET',
-      url: 'http://localhost:3000/api/items',
-      dataType: 'jsonp',
-      jsonpCallback: 'logResults',
-      // jsonp: 'onJsonPLoad',
-      error: function(json, status, error) {
-        console.log('error!: ');
-        console.log(json);
-        console.log(status);
-        console.log(error);
-      },
-      success: function(json) {
-        console.log('success!: ');
-        console.log(json);
-      },
-    });
-    function logResults(json){
-      console.log(json);
-    }
-
-  });
-  </script>
-
-
-<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.1e04665e16f944715fd2.js" nomodule></script><script type="text/javascript" src="polyfills.8bbb231b43165d65d357.js"></script><script type="text/javascript" src="main.8a8ad61ba0df2c0159ea.js"></script></body>
+});
+</script>
+<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.1e04665e16f944715fd2.js" nomodule></script><script type="text/javascript" src="polyfills.8bbb231b43165d65d357.js"></script><script type="text/javascript" src="main.f1594f925b8bf0eafe32.js"></script></body>
 </html>
