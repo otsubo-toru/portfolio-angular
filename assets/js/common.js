@@ -1,7 +1,10 @@
 
 $(function() {
 	// スマホ対応
-	$(window).spSwitch();
+	$(window).spSwitch({
+		defaultCssFiles : ["./assets/css/sp_common.css"],
+		cssFiles : ["./assets/css/sp_common.css"],
+	});
 
 	//loadComponents読み込み
 	if($.fn.loadComponents) {
