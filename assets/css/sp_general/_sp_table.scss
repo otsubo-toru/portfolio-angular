@@ -1,0 +1,121 @@
+
+/*-------------------------------------------*/
+/* テーブル関係                              */
+/*-------------------------------------------*/
+
+/*
+-------------------------------------------*/
+.table.pc-hidden {
+	th,
+	td {
+		padding:5px;
+	}
+}
+
+/*
+-------------------------------------------*/
+.table.md-sp-block {
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-bottom:1px solid #CCC;
+	th,
+	td {
+		width:auto;
+		display:block;
+		border-bottom:none;
+	}
+}
+
+
+
+/*
+-------------------------------------------*/
+.table.md-sp-scrollx {
+	display: block;
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	border:none;
+	caption {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+	}
+	thead {
+		display: block;
+		float: left;
+	}
+	tbody {
+		display: block;
+		width: auto;
+		position: relative;
+		overflow-x: auto;
+		white-space: nowrap;
+		-webkit-overflow-scrolling: touch;
+	}
+	/*
+	tbody::-webkit-scrollbar {
+		height: 5px;
+	}
+	tbody::-webkit-scrollbar-track {
+		border-radius: 5px;
+		background: #eee;
+	}
+	tbody::-webkit-scrollbar-thumb {
+		border-radius: 5px;
+		background: #666;
+	}
+	*/
+	thead tr {
+		display: block;
+	}
+	th,
+	td {
+		display: block;
+		vertical-align:middle;
+	}
+	tbody tr {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	/* borderの調整 */
+	th,
+	td {
+		padding:4px 8px;
+		border-bottom: 0;
+	}
+	thead th:first-child,
+	tbody th:first-child {
+	}
+	tbody th,
+	td {
+		border-left: 0;
+		border-right: 0;
+	}
+	tbody tr {
+		border-right: 1px solid #babcbf;
+	}
+	th:last-child,
+	td:last-child {
+		border-bottom: 1px solid #babcbf;
+	}
+}
+
+
+/* 見積もりフォーム  md-mitumori-form
+-------------------------------------------*/
+.table.md-mitumori-form {
+	width:100%;
+	margin:0;
+	th,
+	td {
+		transition:none;
+	}
+	td {
+	}
+	th {
+		width:auto;
+	}
+}

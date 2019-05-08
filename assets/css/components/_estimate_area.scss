@@ -1,58 +1,52 @@
 
-
-
-
-
-
 /*-------------------------------------------*/
 /* 見積もりボタンエリア                      */
 /*-------------------------------------------*/
 .estimate-area {
   text-align:center;
-}
-.estimate-area .el-flow {
-  margin:0 0 10px;
-}
-.estimate-area .el-copy {
-  font-size:16px;
-  color:#53820F;
-  margin:0 0 5px;
-  font-weight:bold;
-}
-.estimate-area .el-btn-area {
-}
+  .el-flow {
+    margin:0 0 10px;
+  }
+  .el-copy {
+    font-size:16px;
+    color:#53820F;
+    margin:0 0 5px;
+    font-weight:bold;
+  }
+  .el-btn-area {
+  }
 
-/* md-compact
--------------------------------------------*/
-.estimate-area.md-compact {
-  background-color:#F1F1F1;
-  border-radius:3px;
-  padding:15px;
-  margin:0px 20px;
-  text-align:center;
-}
-.estimate-area.md-compact .el-copy {
-}
-.estimate-area.md-compact .el-btn-area {
-}
+  /* md-compact
+  -------------------------------------------*/
+  &.md-compact {
+    background-color:#F1F1F1;
+    border-radius:3px;
+    padding:15px;
+    margin:0px 20px;
+    text-align:center;
+    .el-copy {
+    }
+    .el-btn-area {
+    }
+  }
 
-
-/* md-mitumori-form
--------------------------------------------*/
-.estimate-area.md-mitumori-form {
-  text-align:left;
-  border-left:1px solid #DDD;
-  border-right:1px solid #DDD;
-  border-bottom:2px solid #999;
-  padding:10px;
-  background-color:#F5F5F5;
-}
-.estimate-area.md-mitumori-form .el-copy {
-  text-align:center;
-}
-.estimate-area.md-mitumori-form .el-flow {
-  margin:0 0 20px;
-  text-align:center;
-}
-.estimate-area.md-mitumori-form .el-btn-area {
+  /* md-mitumori-form
+  -------------------------------------------*/
+  &.md-mitumori-form {
+    text-align:left;
+    border-left:1px solid #DDD;
+    border-right:1px solid #DDD;
+    border-bottom:2px solid #999;
+    padding:10px;
+    background-color:#F5F5F5;
+    .el-copy {
+      text-align:center;
+    }
+    .el-flow {
+      margin:0 0 20px;
+      text-align:center;
+    }
+    .el-btn-area {
+    }
+  }
 }

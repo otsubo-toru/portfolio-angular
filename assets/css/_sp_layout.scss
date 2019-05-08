@@ -1,0 +1,140 @@
+
+
+
+/*=========================================*/
+/*layout*/
+/*=========================================*/
+
+/*-------------------------------------------*/
+/* 全体レイアウト                            */
+/*-------------------------------------------*/
+body {
+  font-size:100%;
+  color:#333;
+}
+
+#PAGE {
+	width: 100%;
+	float:none;
+	display:block;
+	overflow:hidden;
+	/*font-size: 80%;*/
+}
+
+.header,
+.gnav,
+.footer {
+}
+.container {
+  width:100%;
+}
+
+/*-------------------------------------------*/
+/* ヘッダー
+/*-------------------------------------------*/
+.header {
+  .header-container {
+    transition: all 0.2s linear;
+  }
+  .header .site-name {
+  }
+  .header-mini-menu {
+    display: none;
+  }
+}
+
+.header.transform {
+  background-color:transparent;
+  .header-container {
+    height:0px;
+    padding-top:0;
+    padding-bottom:0;
+    overflow: hidden;
+  }
+}
+
+
+/*-------------------------------------------*/
+/* グローバルナビ
+/*-------------------------------------------*/
+.gnav {
+  display:none;
+  transition: all 0.2s ease-in-out;
+  .gnav-container {
+  }
+  .gnav-items {
+  }
+  .gnav-item {
+    display:inline-block;
+  }
+  .gnav-item-link {
+    display:block;
+    padding:10px 20px;
+  }
+}
+.header.transform .gnav {
+  background-color:rgba(240,240,240,0.95);
+}
+
+/*-------------------------------------------*/
+/* メイン
+/*-------------------------------------------*/
+.main {
+  margin-top:150px;
+  .main-container {
+    width:100%;
+    margin:0;
+    padding:0;
+  }
+}
+
+
+/*-------------------------------------------*/
+/* パンくずリスト                            */
+/*-------------------------------------------*/
+.breadcrumb {
+  .item {
+    .item:after {
+    }
+    &.current {
+      &:after {
+      }
+    }
+    &.current strong {
+    }
+  }
+}
+
+
+/*-------------------------------------------*/
+/* サイドバー
+/*-------------------------------------------*/
+.sidebar {
+  display: none;
+  .sidebar-sticky {
+  }
+}
+
+
+/*-------------------------------------------*/
+/* コンテンツ                                */
+/*-------------------------------------------*/
+.content {
+  float:none;
+  width:100%;
+  margin: 0;
+  padding:0;
+}
+
+
+/*-------------------------------------------*/
+/* フッダー
+/*-------------------------------------------*/
+.footer {
+  .footer-container {
+    width:96%;
+    padding: 10px 2%;
+  }
+  .copyright {
+  }
+}

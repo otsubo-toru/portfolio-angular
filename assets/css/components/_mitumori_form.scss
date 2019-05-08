@@ -1,142 +1,130 @@
 
-
-
-
-
 /*-------------------------------------------*/
 /* 見積もりフォーム                          */
 /*-------------------------------------------*/
-.form .aside,
-.form-area .aside,
-.mitumori-form .aside {
-  margin:0 10px;
+.mitumori-form {
+  .aside {
+    margin:0 10px;
+  }
+  .estimate-area .aside {
+    margin:0 20px;
+  }
+  textarea {
+    width:98%;
+    height:6em;
+    resize: vertical;
+  }
+  input[type=text] {
+    width:4em;
+    text-align:center;
+    &[name=cloth_num] {
+      width:6em;
+      text-align:left;
+    }
+    &.is-error-validate {
+      border-radius:2px;
+      border:1px solid #F00;
+    }
+  }
+  select {
+    &.is-error-validate {
+      border-radius:2px;
+      border:1px solid #F00;
+    }
+    &[name^=op_] {
+    }
+    &[name^=value_op_] {
+      margin-left:5px;
+    }
+  }
+  .validate-alert {
+    color:#F00;
+    font-size:12px;
+    margin:4px 0;
+    display:block;
+  }
+  .label-required,
+  .el-label-required {
+    font-size:12px;
+    display:block;
+    color:#F00;
+  }
+  .mf-hide {
+    display: none;
+  }
+  .mf-submit {
+  }
+  .el-unit {
+    font-size:12px;
+    color:#666;
+    margin-left:2px;
+  }
+  /* mf-tab-menu
+  -------------------------------------------*/
+  .mf-tab-menu {
+    .el-item.btn {
+      border:1px solid #999;
+      padding:10px;
+      background-color:#AAA;
+      color:#FFF;
+      box-shadow:0 0 0 0 rgba(0,0,0,0.1);
+      &.is-selected {
+        border-color:#F08300;
+        background-color:#FFF;
+        color:#555;
+        color:#F08300;
+      }
+      &.is-selected {
+        opacity:1.0;
+      }
+      &.is-selected i.fontello-angle-double-down {
+        color:#F08300;
+        transform:rotate(0deg);
+      }
+      i.fontello-angle-double-down {
+        transition:all 0.2s ease-in-out;
+        transform:rotate(-90deg);
+      }
+    }
+  }
+  /* mf-input-block
+  -------------------------------------------*/
+  .mf-input-block {
+    display: inline-block;
+    background-color: #F5F5F5;
+    padding: 5px 8px;
+    border: 1px solid #DDD;
+    margin-bottom:2px;
+    margin-top:2px;
+    &.md-block {
+      display: block;
+    }
+  }
+  /* mf-input-label
+  -------------------------------------------*/
+  .mf-input-label {
+    display:block;
+    border:1px solid transparent;
+    border-radius:2px;
+    transition:all 0.2s ease-in-out;
+    cursor:pointer;
+    position:relative;
+    padding:3px;
+    font-size: 12px;
+    img {
+    }
+    &:hover {
+      border:1px solid #CCC;
+    }
+    &.checked {
+      border:1px solid #F9AE56;
+      background-color:rgba(255, 222, 126, 0.4);
+    }
+    &.md-iblock {
+      display:inline-block;
+    }
+  }
 }
-.mitumori-form .estimate-area .aside {
-  margin:0 20px;
-}
-
-.mitumori-form textarea {
-  width:98%;
-  height:6em;
-  resize: vertical;
-}
-.mitumori-form input[type=text] {
-  width:4em;
-  text-align:center;
-}
-.mitumori-form input[type=text][name=cloth_num] {
-  width:6em;
-  text-align:left;
-}
-.mitumori-form input[type=text].is-error-validate {
-  border-radius:2px;
-  border:1px solid #F00;
-}
-.mitumori-form select.is-error-validate {
-  border-radius:2px;
-  border:1px solid #F00;
-}
-.mitumori-form .validate-alert {
-  color:#F00;
-  font-size:12px;
-  margin:4px 0;
-  display:block;
-}
-.mitumori-form .label-required,
-.mitumori-form .el-label-required {
-  font-size:12px;
-  display:block;
-  color:#F00;
-}
-
-.mitumori-tab-menu .el-item.btn {
-  border:1px solid #999;
-  padding:10px;
-  background-color:#AAA;
-  color:#FFF;
-  box-shadow:0 0 0 0 rgba(0,0,0,0.1);
-}
-.mitumori-tab-menu .el-item.btn i.icon-angle-double-down {
-  transition:all 0.2s ease-in-out;
-  transform:rotate(-90deg);
-}
-.mitumori-tab-menu .el-item.btn.is-selected {
-  border-color:#F08300;
-  background-color:#FFF;
-  color:#555;
-  color:#F08300;
-}
-.mitumori-tab-menu .el-item.btn.is-selected {
-  opacity:1.0;
-}
-.mitumori-tab-menu .el-item.btn.is-selected i.icon-angle-double-down {
-  color:#F08300;
-  transform:rotate(0deg);
-}
-
-
-/* input-block
--------------------------------------------*/
-.mitumori-form .el-input-block,
-.mitumori-form .input-block {
-  display: inline-block;
-  background-color: #F5F5F5;
-  padding: 5px 8px;
-  border: 1px solid #DDD;
-  margin-bottom:2px;
-  margin-top:2px;
-}
-.mitumori-form .el-input-block.md-block,
-.mitumori-form .input-block.md-block {
-  display: block;
-}
-
-/* input-label
--------------------------------------------*/
-.mitumori-form .input-label {
-  display:block;
-  border:1px solid transparent;
-  border-radius:2px;
-  transition:all 0.2s ease-in-out;
-  cursor:pointer;
-  position:relative;
-  padding:3px;
-  font-size: 12px;
-}
-.mitumori-form .input-label:hover {
-  border:1px solid #CCC;
-}
-.mitumori-form .input-label.checked {
-  border:1px solid #F9AE56;
-  background-color:rgba(255, 222, 126, 0.4);
-}
-.mitumori-form .input-label img {
-}
-.mitumori-form .input-label.md-iblock {
-  display:inline-block;
-}
-
-.mitumori-form .hide {
-  display: none;
-}
-
-.mitumori-form .submit {
-}
-
-
-.mitumori-form .el-unit {
-  font-size:12px;
-  color:#666;
-  margin-left:2px;
-}
-
-.mitumori-form select[name^=op_] {
-
-}
-.mitumori-form select[name^=value_op_] {
-  margin-left:5px;
-}
-
 
 
 /*-------------------------------------------*/
@@ -149,24 +137,24 @@
   min-width:480px;
   max-width:740px;
   z-index:9999;
-}
-.mitumori-form.md-popup .estimate-area.md-mitumori-form {
-  border-bottom:none;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-}
-.mitumori-form.md-popup .close-btn {
-  position:absolute;
-  top:0px;
-  right:0px;
-  color:rgba(255,255,255,0.8);
-  color:#FFF \9; /*ltIE8*/
-  font-size:24px;
-  text-align:center;
-}
-.mitumori-form.md-popup .close-btn:hover {
-  color:rgba(255,255,255,1.0);
-  color:#FFF \9; /*ltIE8*/
+  .estimate-area.md-mitumori-form {
+    border-bottom:none;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .close-btn {
+    position:absolute;
+    top:0px;
+    right:0px;
+    color:rgba(255,255,255,0.8);
+    color:#FFF \9; /*ltIE8*/
+    font-size:24px;
+    text-align:center;
+    &:hover {
+      color:rgba(255,255,255,1.0);
+      color:#FFF \9; /*ltIE8*/
+    }
+  }
 }
 .mitumori-form-bg {
   display:none;

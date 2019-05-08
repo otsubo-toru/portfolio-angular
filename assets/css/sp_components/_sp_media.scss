@@ -1,0 +1,157 @@
+
+
+/*-------------------------------------------*/
+/* media                                     */
+/*-------------------------------------------*/
+.media {
+	.el-figure,
+	.el-thumb {
+		float:none;
+		margin-right:0;
+		&.md-right {
+			float:none;
+			margin-left:0;
+		}
+	}
+	/* md-table
+	-------------------------------------------*/
+	&.md-table {
+	}
+	/* md-gutter
+	-------------------------------------------*/
+	&.md-gutter05 {
+		.el-figure,
+		.el-thumb {
+			margin-right:0px;
+			&.md-right {
+				margin-right:0px;
+				margin-left:0px;
+			}
+		}
+	}
+	&.md-gutter20 {
+		.el-figure,
+		.el-thumb {
+			margin-right:0px;
+		}
+		&.md-right {
+			margin-right:0px;
+			margin-left:0px;
+		}
+	}
+}
+
+
+
+
+
+
+
+/*-------------------------------------------*/
+/* sp-media                                  */
+/*-------------------------------------------*/
+.sp-media {
+	*zoom:1;
+	display:block;
+	&:after {
+		content:"\0020";
+		display:block;
+		height:0;
+		clear:both;
+		overflow:hidden;
+		visibility:hidden;
+	}
+	.el-figure,
+	.el-thumb {
+		float:left;
+		margin-right:10px;
+		img {
+			display:block;
+		}
+		&.md-right {
+			float:right;
+			margin-right:0px;
+			margin-left:10px;
+		}
+	}
+	.el-body {
+		overflow:hidden;
+	}
+	.el-caption {
+		font-size:12px;
+		color:#666;
+	}
+}
+
+.items.md-framed .item.sp-media {
+	.el-figure,
+	.el-thumb {
+		padding-right:10px;
+	}
+	&.md-right {
+		padding-left:10px;
+	}
+	&.md-gutter05 {
+		.el-figure,
+		.el-thumb {
+			padding-right:5px;
+		}
+		&.md-right {
+			padding-left:50px;
+		}
+	}
+}
+
+
+/* md-table
+-------------------------------------------*/
+.sp-media.md-table {
+	display:table;
+	.el-figure,
+	.el-thumb {
+		display:table-cell;
+		margin-right:0;
+		padding-right:10px;
+		img {
+			display:block;
+		}
+		&.md-right {
+			margin-left:0;
+			padding-right:0px;
+			padding-left:10px;
+		}
+	}
+	.el-body {
+		display:table-cell;
+		vertical-align:top;
+		overflow:hidden;
+		&.md-middle {
+			vertical-align:middle;
+		}
+	}
+}
+
+
+/* md-gutter
+-------------------------------------------*/
+.sp-media.md-sp-gutter05 {
+	.el-figure,
+	.el-thumb {
+		margin-right:5px;
+		&.md-right {
+			margin-right:0px;
+			margin-left:5px;
+		}
+	}
+}
+
+.sp-media.md-sp-gutter20 {
+	.el-figure,
+	.el-thumb {
+		margin-right:20px;
+		&.md-right {
+			margin-right:0px;
+			margin-left:20px;
+		}
+	}
+}

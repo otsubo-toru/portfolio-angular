@@ -1,0 +1,107 @@
+
+/*-------------------------------------------*/
+/* items                                     */
+/*-------------------------------------------*/
+.items {
+	.item {
+		&:hover {
+		}
+	}
+	&.md-sp-mb00 .item {
+		margin:0 0 0px;
+	}
+	&.md-sp-mb05 .item {
+		margin:0 0 5px;
+	}
+	&.md-sp-mb10 .item {
+		margin:0 0 10px;
+	}
+	&.md-sp-mb15 .item {
+		margin:0 0 15px;
+	}
+	&.md-sp-mb20 .item {
+		margin:0 0 20px;
+	}
+	&.md-sp-mb30 .item {
+		margin:0 0 30px;
+	}
+	&.md-sp-mb40 .item {
+		margin:0 0 40px;
+	}
+}
+
+
+/*-------------------------------------------*/
+/* item                                      */
+/*-------------------------------------------*/
+.item {
+	.el-figure img,
+	.el-thumb img {
+		/*
+		width:100%;
+		height:auto;
+		*/
+	}
+	.el-thumb-img {
+		/*width:100%;*/
+		max-width:100%;
+		height:auto;
+		transition:none;
+	}
+}
+
+
+
+/* md-series
+-------------------------------------------*/
+
+
+/* .item.md-polaroid
+-------------------------------------------*/
+
+
+/* .item.md-page-menu
+-------------------------------------------*/
+.item.md-page-menu {
+	padding:2px;
+	border-width:3px;
+	margin-bottom:20px;
+	&:after {
+		bottom: -13px;
+		left: 0;
+		right: 0;
+		margin:0 auto;
+		content: "";
+		height: 0;
+		width: 0;
+		display:block;
+		position: absolute;
+		border: solid transparent;
+		border-color: rgba(255, 255, 255, 0);
+		border-top-color: #BBB;
+		border-top-width: 11px;
+		border-bottom-width: 0px;
+		border-left-width: 11px;
+		border-right-width: 11px;
+		z-index:1;
+	}
+	&:before {
+		bottom: -9px;
+		left: 0;
+		right: 0;
+		margin:0 auto;
+		content: "";
+		height: 0;
+		width: 0;
+		display:block;
+		position: absolute;
+		border: solid transparent;
+		border-color: rgba(255, 255, 255, 0);
+		border-top-color: #FFF;
+		border-top-width: 9px;
+		border-bottom-width: 0px;
+		border-left-width: 8px;
+		border-right-width: 8px;
+		z-index:2;
+	}
+}

@@ -1,94 +1,87 @@
 
-
-
-
-
 /*-------------------------------------------*/
 /* サブフッター                              */
 /*-------------------------------------------*/
 .sub-footer {
-  font-family:"メイリオ", Meiryo, Osaka, sans-serif;
-  padding:10px 10px 0;
-  background-color:#F5F5F5;
+  border-top:1px solid #CCC;
+  border-bottom:1px solid #CCC;
   clear:both;
-  margin:30px 0;
-  border-top:1px solid #AAA;
-  border-bottom:1px solid #AAA;
-}
-.sub-footer div,
-.subfooter li,
-.sub-footer p,
-.sub-footer a {
-  font-family:"メイリオ", Meiryo, Osaka, sans-serif !important;
-}
-.sub-footer a,
-.sub-footer a:link
-.sub-footer a:active
-.sub-footer a:visited {
-  color:#005C9C;
-  transition:all 0.2s ease-in-out;
-}
-.sub-footer a:hover {
-  /*opacity:0.8;
-  filter:alpha(opacity=80);
-  zoom:1;
-  text-decoration:none;*/
-}
-.sub-footer .heading {
-  font-size:17px;
-  font-weight:bold;
-  color:#515146;
-  border:none;
-}
-.sub-footer .heading.md-first {
-  font-size:18px;
-  margin:0 0 5px;
-}
-.sub-footer .heading i:before,
-.sub-footer .heading.md-first i:before {
-  margin:-5px 8px 0 3px;
-}
-.sub-footer .heading i.icon-megaphone {
-  padding:0 0 10px;
-  margin-right:0px;
-}
-.sub-footer .heading i.icon-megaphone:before {
-  font-size:32px;
-}
-.sub-footer .heading.md-second {
-  font-size:15px;
-  margin:0 0 10px;
-  border-bottom:1px dashed #999;
-}
-.sub-footer .heading.md-third {
-  font-size:13px;
-  margin:0 0 2px;
-}
-
-.sub-footer hr {
-  margin-bottom:10px;
-}
-
-/* リンクアイテム
--------------------------------------------*/
-.sub-footer .items.md-lined {
-  padding:0 2px;
+  background-color:#F5F5F5;
+  padding:20px 10px;
   margin:0;
-}
-.sub-footer .items.md-lined .item {
-  padding:2px 0;
-  margin:0;
-  margin-bottom:0;
-  border-top:none;
-  border-bottom:1px solid #DDD;
-}
-.sub-footer .items.md-lined .item a {
-  padding:4px 5px;
-  margin:0;
-  display:block;
-  border-radius:2px;
-}
-.sub-footer .items.md-lined .item a:hover {
-  text-decoration:none;
-  background-color:rgba(0,0,0,0.1);
+  a {
+    &,
+    &:link
+    &:active
+    &:visited {
+      color:#005C9C;
+      transition:all 0.2s ease-in-out;
+    }
+    &:hover {
+      /*opacity:0.8;
+      filter:alpha(opacity=80);
+      zoom:1;
+      text-decoration:none;*/
+    }
+  }
+  .heading {
+    font-size:17px;
+    font-weight:bold;
+    color:#515146;
+    border:none;
+    i {
+      &:before {
+        margin:-5px 8px 0 3px;
+      }
+      &.fontello-megaphone {
+        padding:0 0 10px;
+        margin-right:0px;
+        &:before {
+          font-size:32px;
+        }
+      }
+    }
+    &.md-first {
+      font-size:18px;
+      margin:0 0 5px;
+      i:before {
+        margin:-5px 8px 0 3px;
+      }
+    }
+    &.md-second {
+      font-size:15px;
+      margin:0 0 10px;
+      border-bottom:1px dashed #999;
+    }
+    &.md-third {
+      font-size:13px;
+      margin:0 0 2px;
+    }
+  }
+  hr {
+    margin-bottom:10px;
+  }
+  /* リンクアイテム
+  -------------------------------------------*/
+  .items.md-lined {
+    padding:0 2px;
+    margin:0;
+    .item {
+      padding:2px 0;
+      margin:0;
+      margin-bottom:0;
+      border-top:none;
+      border-bottom:1px solid #DDD;
+      a {
+        padding:4px 5px;
+        margin:0;
+        display:block;
+        border-radius:2px;
+        &:hover {
+          text-decoration:none;
+          background-color:rgba(0,0,0,0.1);
+        }
+      }
+    }
+  }
 }

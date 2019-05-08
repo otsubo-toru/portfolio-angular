@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/*
+表示範囲幅320px設定
+以下ピクセルサイズは論理サイズ
+・iphone5以前は320px 6も同じ
+・Iphone6plusは約400px
+・最近のAndroid系は320px相当(1080px)と想定(サンプル：Nexus5)
+2015/4
+*/
+
+@import "sp_base";
+@import "sp_layout";
+@import "sp_general";
+@import "sp_component";

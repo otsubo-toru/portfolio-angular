@@ -1,8 +1,10 @@
+@charset "utf-8";
+
+
 
 /*===========================================*/
 /* コンポーネント                            */
 /*===========================================*/
-
 
 @import "components/heading";
 @import "components/pagination";
@@ -20,7 +22,7 @@
 @import "components/estimate_area";
 @import "components/point_area";
 @import "components/bnr_area";
-@import "components/product_list_area";
+@import "components/collections_area";
 @import "components/related_area";
 @import "components/maker_link_area";
 @import "components/mitumori_form";
@@ -38,4 +40,7 @@
 @import "plugins/highslide";
 @import "plugins/table_hover";
 @import "plugins/pagetop_btn";
+@import "plugins/google_search";
 @import "plugins/swiper";
+@import "plugins/baguette_box";
+@import "plugins/izi_modal";

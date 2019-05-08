@@ -1,0 +1,164 @@
+
+/*-------------------------------------------*/
+/* heading                                   */
+/*-------------------------------------------*/
+
+.heading {
+	/* md-page-title
+	-------------------------------------------*/
+	&.md-page-title {
+		font-size:32px;
+		i {
+		}
+		a.link {
+		}
+		.el-subtitle {
+		}
+	}
+	/* md-contents-top
+	-------------------------------------------*/
+	&.md-contents-top {
+		font-size:20px;
+		margin:0 3px 5px;
+	}
+	/* md-catalog-top
+	-------------------------------------------*/
+	&.md-catalog-top {
+		font-size: 30px;
+		border-left-width: 8px;
+		h2 {
+			font-size: 30px;
+		}
+		.el-sub-title,
+		h2 .el-sub-title {
+			font-size:16px;
+		}
+		.el-title-detail,
+		h2 .el-title-detail {
+			display:inline;
+			font-size:20px;
+			font-weight:bold;
+			color:#444;
+			padding:0;
+			margin:0;
+			margin-left:20px;
+		}
+	}
+	/* md-catalog-top-small
+	-------------------------------------------*/
+	&.md-catalog-top-small {
+		border-left:5px solid #51A743;
+		padding:4px 0 2px 7px;
+		font-size:22px;
+		margin:0 0 5px;
+		.el-sub-title {
+			display:block;
+			font-size:14px;
+			font-weight:bold;
+			color:#444;
+		}
+	}
+	/* md-catalog-feat, md-feat
+	-------------------------------------------*/
+	&.md-feat {
+		font-size:16px;
+		margin-left:2px;
+	}
+	/* md-section
+	-------------------------------------------*/
+	&.md-section {
+		font-size:18px;
+		&:after {
+			left: 25px;
+		}
+		&:before {
+			left: 32px;
+		}
+		i {
+			font-size:26px;
+			&:before {
+			}
+			&.fontello-book-1 {
+			}
+		}
+		.el-sub-title {
+		}
+	}
+	/* md-top
+	-------------------------------------------*/
+	&.md-top {
+		font-size:16px;
+		padding:8px 8px 7px;
+		.el-sub-title {
+			display:none;
+			font-size:14px;
+		}
+		.el-supplement {
+			font-size:13px;
+		}
+		a.el-link {
+		}
+		i {
+			&:before {
+				font-size:24px;
+				margin:0 0.2em 0 0;
+				vertical-align:middle;
+				line-height:1.0;
+			}
+			&.fontello-lightbulb-3:before {
+				margin-top:-5px;
+			}
+			&.fontello-book-1:before {
+				font-size:23px;
+			}
+			&.fontello-pallette:before {
+				margin-top:-2px;
+				margin-left:-5px;
+				margin-right:0.5em;
+			}
+			&.fontello-yen:before {
+				font-size:24px;
+			}
+		}
+	}
+	/* md-top-small
+	-------------------------------------------*/
+	&.md-top-small {
+		font-size:15px;
+		padding:6px 10px 5px;
+		margin:0 0 10px;
+	}
+	/* md-main
+	-------------------------------------------*/
+	&.md-main {
+		font-size:15px;
+		img {
+			vertical-align:bottom;
+		}
+		.el-sub-title {
+			font-size:13px;
+		}
+		.el-supplement {
+		}
+	}
+	/* md-main-small
+	-------------------------------------------*/
+	&.md-main-small {
+		margin:0 0 10px;
+		font-size:14px;
+	}
+	/* md-main-alt
+	-------------------------------------------*/
+	&.md-main-alt {
+		font-size:15px;
+	}
+	/* md-related
+	-------------------------------------------*/
+	&.md-related {
+		font-size: 15px;
+		padding:6px 10px;
+		.el-sub-title {
+			font-size:13px;
+		}
+	}
+}

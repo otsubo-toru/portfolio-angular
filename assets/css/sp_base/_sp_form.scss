@@ -1,0 +1,17 @@
+
+/* フォーム関係
+-----------------------------------------*/
+input,
+select,
+textarea {
+	font-size:16px;
+}
+input {
+  &[type=radio] {
+  	font-size:16px;
+  }
+  &[type=radio], x:-moz-any-link {
+  }
+}
+textarea {
+}

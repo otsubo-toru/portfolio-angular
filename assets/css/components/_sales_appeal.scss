@@ -1,9 +1,4 @@
 
-
-
-
-
-
 /*-------------------------------------------*/
 /* 価格アピール                              */
 /*-------------------------------------------*/
@@ -12,21 +7,21 @@
   top:120px;
   right:20px;
   text-align:center;
-}
-.sales-appeal .el-price {
-  color:#E10A17;
-  font-weight:bold;
-  font-size:50px;
-  line-height:1.0;
-  *line-height:1.1;
-}
-.sales-appeal .el-price .el-price-unit {
-  font-size:20px;
-}
-.sales-appeal .el-copy {
-  font-weight:bold;
-  color:#FFF;
-  background-color:#E10A17;
-  padding:2px 5px 1px;
-  *margin-top:-6px;
+  .el-price {
+    color:#E10A17;
+    font-weight:bold;
+    font-size:50px;
+    line-height:1.0;
+    *line-height:1.1;
+    .el-price-unit {
+      font-size:20px;
+    }
+  }
+  .el-copy {
+    font-weight:bold;
+    color:#FFF;
+    background-color:#E10A17;
+    padding:2px 5px 1px;
+    *margin-top:-6px;
+  }
 }

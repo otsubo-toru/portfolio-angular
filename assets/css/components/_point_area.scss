@@ -1,38 +1,35 @@
 
 
-
-
-
 /*-------------------------------------------*/
 /* 「ココがポイント！」                      */
 /*-------------------------------------------*/
 .point-area {
   margin:0 0 15px;
-}
-.point-area .heading.md-point {
-  background:url("/images/common/midashi_point.png") no-repeat top left;
-  height:33px;
-  text-indent:-9999px;
-  white-space:nowrap;
-  overflow:hidden;
-  margin-bottom:0px;
-  padding:0;
-}
-.point-area .el-body {
-  border:6px solid #F28A00;
-  border-radius:5px;
-  padding:10px;
-  font-weight:bold;
-  font-size:15px;
-  color:#515146;
-}
-.point-area .el-item {
-  line-height:1.5;
-  margin-bottom:7px;
-  font-weight:bold;
-  font-size:15px;
-  color:#515146;
-}
-.point-area .el-item:last-child {
-  margin-bottom:0px;
+  .heading.md-point {
+    background:url("/images/common/midashi_point.png") no-repeat top left;
+    height:33px;
+    text-indent:-9999px;
+    white-space:nowrap;
+    overflow:hidden;
+    margin-bottom:0px;
+    padding:0;
+  }
+  .el-body {
+    border:6px solid #F28A00;
+    border-radius:5px;
+    padding:10px;
+    font-weight:bold;
+    font-size:15px;
+    color:#515146;
+  }
+  .el-item {
+    line-height:1.5;
+    margin-bottom:7px;
+    font-weight:bold;
+    font-size:15px;
+    color:#515146;
+    &:last-child {
+      margin-bottom:0px;
+    }
+  }
 }

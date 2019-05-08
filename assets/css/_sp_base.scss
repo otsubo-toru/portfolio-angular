@@ -1,0 +1,114 @@
+
+/*=========================================*/
+/*reset
+/*=========================================*/
+body, div, p, h1, h2, h3, h4, h5, h6,
+table, tr, th, td, fieldset, pre, code,
+ul, ol, li, dl, dt, dd, textarea,
+blockquote, address, caption, form {
+  line-height:1.5;
+  font-size:100%;
+}
+
+
+
+/*===========================================*/
+/* バグ対策
+/*===========================================*/
+
+/*-------------------------------------------*/
+/* Android Chrome(40.0.2214.89)において
+/*「&nbsp;」が「・」に化ける 15/3/14
+/* 他の場所にも指定あり
+/*-------------------------------------------*/
+body, div, p, h1, h2, h3, h4, h5, h6, table, tr, th, td,
+fieldset, pre, code, ul, ol, li, dl, dt, dd,
+textarea, blockquote, address, caption, form {
+	font-family: "ＭＳ Ｐゴシック", "MS P Gothic", Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro" sans-serif, Helvetica;
+}
+
+/*-------------------------------------------*/
+/* Android Chrome(40.0.2214.89)において
+/*「&nbsp;」が「・」に化ける 15/3/14 */
+/* 他の場所にも指定あり */
+/*-------------------------------------------*/
+.meiryo {
+	font-family:"メイリオ", Meiryo, Osaka, sans-serif, Helvetica;
+}
+
+/*-------------------------------------------*/
+/* Android Chromeにおいて
+/*「&sup2;」「&sup3;」が表示されない
+/* フォントを指定する
+/*-------------------------------------------*/
+.sp-ch-fix {
+	font-family: Verdana;
+}
+
+
+
+
+/*===========================================*/
+/* 全般
+/*===========================================*/
+
+body {
+/*	font-size: 100%;*/
+	-webkit-text-size-adjust: 100%;
+}/* 16px */
+
+
+/* リンクスタイル
+-----------------------------------------*/
+a,
+a:link,
+a:visited,
+a:active {
+  transition:none;
+}
+a:visited {
+}
+a:hover {
+}
+
+
+/* 画像
+-----------------------------------------*/
+img {
+}
+
+/* 見出し要素
+-----------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+}
+h1 {
+  font-size:1.6rem;
+}
+h2 {
+  width: auto;
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+h6 {
+}
+
+/* インライン要素など
+-----------------------------------------*/
+del {
+}
+em {
+}
+strong {
+}
+sup {
+}
+
+hr {
+}
+
+@import "sp_base/sp_form";
+@import "sp_base/sp_list";

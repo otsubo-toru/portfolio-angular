@@ -1,0 +1,20 @@
+
+/*-------------------------------------------*/
+/* iziModal
+/*-------------------------------------------*/
+
+
+.iziModal-navigate {
+  &-prev,
+  &-next {
+    background-color:transparent;
+    border: none;
+    &:hover {
+      background-color:transparent;
+      border: none;
+    }
+  }
+  &-caption {
+
+  }
+}

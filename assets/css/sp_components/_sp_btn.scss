@@ -1,0 +1,106 @@
+
+/*-------------------------------------------*/
+/* ボタン                                    */
+/*-------------------------------------------*/
+.btn {
+	transition:none;
+	max-width:85%;
+	&:hover {
+	}
+	&:link,
+	&:visited,
+	&:active {
+	}
+	i {
+		&.right {
+		}
+		&.left {
+		}
+	}
+	/* 見積もりボタン
+	-------------------------------------------*/
+	&.md-estimate {
+		i {
+			&.fontello-document {
+			}
+			&.fontello-angle-double-right {
+			}
+		}
+	}
+	/* 「これで見積もる」ボタン
+	-------------------------------------------*/
+	&.md-estimate.md-set-form {
+		&:hover {
+		}
+	}
+	/* ダウンロード
+	-------------------------------------------*/
+	&.md-download {
+		i {
+			&.fontello-book-1 {
+			}
+		}
+	}
+	/* インラインブロック ボタン
+	-------------------------------------------*/
+	&.md-iblock {
+	}
+	/* 大きいボタン
+	-------------------------------------------*/
+	&.md-large {
+		font-size:16px;
+		font-weight:bold;
+		padding:10px 10px;
+		border-radius:5px;
+		box-shadow:0 1px 0 1px rgba(0,0,0,0.2);
+		i {
+			font-size:20px;
+		}
+	}
+	/* もっと大きいボタン
+	-------------------------------------------*/
+	&.md-xlarge {
+		font-size:16px;
+		font-weight:bold;
+		padding:18px 10px;
+		border-radius:5px;
+		box-shadow:0 1px 0 1px rgba(0,0,0,0.2);
+		i {
+			font-size:22px;
+			&.fontello-mail {
+				font-size:25px;
+				margin-top:-2px;
+			}
+		}
+	}
+	/* もっともっと大きいボタン
+	-------------------------------------------*/
+	&.md-xxlarge {
+		font-size:16px;
+		font-weight:bold;
+		padding:18px 10px;
+		border-radius:5px;
+		box-shadow:0 1px 0 1px rgba(0,0,0,0.2);
+		i {
+			font-size:22px;
+			&.fontello-mail {
+				font-size:25px;
+				margin-top:-2px;
+			}
+		}
+	}
+	/* 複数行ボタン
+	-------------------------------------------*/
+	&.md-sp-line-1-0.md-large i {
+		font-size:28px;
+		margin-top:7px;
+	}
+	&.md-sp-line-1-5.md-large i {
+		font-size:28px;
+		margin-top:7px;
+	}
+	&.md-sp-line-2.md-large i {
+		font-size:28px;
+		margin-top:7px;
+	}
+}

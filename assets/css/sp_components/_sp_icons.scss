@@ -1,0 +1,86 @@
+
+
+/*-------------------------------------------*/
+/* 虫眼鏡アイコン thumb-zoom                 */
+/* highslideのリンク要素に付ける             */
+/*-------------------------------------------*/
+.thumb-zoom i {
+	transition:none;
+}
+
+
+
+
+
+
+/*-------------------------------------------*/
+/* icons                                     */
+/*-------------------------------------------*/
+
+
+/* .icons.md-top
+-------------------------------------------*/
+.icons.md-top {
+	margin:0 3px;
+	/* .icons.md-top.md-large
+	---------------------------------------------*/
+	&.md-large {
+		img {
+			width:70px;
+			height:70px;
+			border-radius:6px;
+		}
+		.el-icon {
+			width: 70px;
+			height: 70px;
+		}
+		.el-icon-source {
+			width: 60px;
+			max-width: 60px;
+			height: 60px;
+			padding: 5px;
+			display:table-cell;
+			vertical-align: middle;
+			overflow:hidden;
+			font-size:16px;
+			border-radius:6px;
+			&.md-color-length {
+			}
+			&.md-bouen {
+				font-size:16px;
+			}
+			&.md-nouki {
+				font-size: 15px;
+				line-height:1.3;
+			}
+			&.md-color-sample {
+				font-size:16px;
+				text-align:left;
+			}
+			&.md-daibiki,
+			&.md-souryou {
+				font-size: 25px;
+				line-height: 1.1;
+			}
+			&.md-souryou.md-price {
+				font-size: 16px;
+			}
+			&.md-souryou.md-souryou-alt {
+				font-size: 25px;
+			}
+		}
+		i.el-icon-source {
+			width:70px;
+			max-width:70px;
+			height:70px;
+			font-size:70px;
+			padding:0px;
+			border-radius:6px;
+		}
+	}
+}
+
+
+
+/* .icons.md-feat
+-------------------------------------------*/

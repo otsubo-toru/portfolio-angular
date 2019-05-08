@@ -1,0 +1,35 @@
+
+/*-------------------------------------------*/
+/* 見積もりフォーム                          */
+/*-------------------------------------------*/
+.mitumori-form {
+	.aside {
+		margin:0 5px;
+	}
+	.estimate-area .aside {
+		margin:0 5px;
+	}
+	input[type=text] {
+		max-width:230px;
+	}
+	select {
+		max-width:230px;
+	}
+	.label-required,
+	.el-label-required {
+		display:inline-block;
+	}
+	.input-label {
+		transition:none;
+	}
+	/*-------------------------------------------*/
+	/* 見積もりフォーム（ポップアップ式）        */
+	/* .mitumori-form.md-popup                   */
+	/*-------------------------------------------*/
+	&.md-popup {
+		width:290px;
+		min-width:290px;
+		max-width:290px;
+		height:95%;
+	}
+}

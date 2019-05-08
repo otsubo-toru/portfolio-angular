@@ -1,0 +1,87 @@
+
+
+/*-------------------------------------------*/
+/* シリーズ一覧                              */
+/*-------------------------------------------*/
+
+.collections-area {
+	/* 「トップへ」 */
+	a.to-top {
+		transition:none;
+	}
+}
+
+
+
+/*-------------------------------------------*/
+/* selected-items-area                       */
+/* 「絞り込み検索」アイテムエリア            */
+/*-------------------------------------------*/
+
+
+/* アイテムリスト */
+.collections-area.md-select-lineup {
+	.display-navi {
+		display:none;
+	}
+	.item {
+		transition:none;
+		.el-thumb {
+			img.el-thumb-img {
+				width:100% !important;
+				height:auto !important;
+			}
+		}
+	}
+	.pager {
+		height:40px;
+		li {
+			a {
+				&,
+				&:link,
+				&:active,
+				&:visited {
+					display:none;
+				}
+				&.prev {
+					display:block;
+				}
+				&.next {
+					display:block;
+				}
+			}
+		}
+	}
+	/* 「トップへ」 */
+	a.to-top {
+		transition:none;
+		&:hover {
+		}
+	}
+	/* .selected-items-area.md-list
+	-------------------------------------------*/
+	&.md-list {
+		.items {
+			border-top:none;
+			.g03 {
+				width:50%;
+				float:left;
+			}
+			.item {
+				padding:5px 0;
+				margin-bottom:10px;
+				.el-thumb {
+					display:inline-block;
+					float:none;
+					margin-right:0;
+				}
+			}
+			.grid:first-child .g03:first-child .item {
+				border-top:none;
+			}
+			.label.hidden {
+				display:none;
+			}
+		}
+	}
+}

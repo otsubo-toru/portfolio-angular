@@ -1,8 +1,4 @@
 
-
-
-
-
 /*-------------------------------------------*/
 /* ボタン                                    */
 /*-------------------------------------------*/
@@ -14,7 +10,7 @@
   font-weight:bold;
   text-decoration:none;
   display:block;
-  padding:7px 10px;
+  padding:10px 20px;
   border-radius:4px;
   text-align:center;
   cursor:pointer;
@@ -35,244 +31,205 @@
   }
   i {
     font-size:18px;
+    margin-left:0 10px;
+    margin-top:-3px;
     &:before {
     }
     &.right {
       float:right;
-      margin-left:10px;
-    }
-    &.left {
-      float:left;
-      margin-right:10px;
-    }
-  }
-}
-
-
-
-/* 見積もりボタン
--------------------------------------------*/
-.btn.md-estimate {
-  background-color:#C63329;
-  i {
-    font-size:20px;
-    &.icon-document:before {
-      float:left;
-      margin:-1px 0 0 2px;
-    }
-    &.icon-angle-double-right {
-      font-size:18px;
-      margin:-2px 0 0 0;
-    }
-  }
-}
-
-
-/* 「これで見積もる」ボタン
--------------------------------------------*/
-.btn.md-estimate.md-set-form {
-  background-color:#F5D2D0;
-  border:1px solid #D7716A;
-  color:#CB4138;
-  box-shadow:none;
-  &:hover {
-    border:1px solid #C63329;
-    color:#C63329;
-    background-color:#F2B6B2;
-    opacity:1;
-  }
-}
-
-
-/* ダウンロード
--------------------------------------------*/
-.btn.md-download {
-  i:before {
-  }
-  i.icon-book-1 {
-    font-size:23px;
-    float:left;
-    margin:-1px 0 0 0;
-  }
-}
-
-/* PDFリンク
--------------------------------------------*/
-.btn.md-pdf {
-  border:1px solid #8FB0C8;
-  background-color:#E0EAFC;
-  color:#517890;
-  border:1px solid #D5A34B;
-  background-color:#FEEAA8;
-  color:#AD6E11;
-  &:hover {
-    border:1px solid #CB9536;
-    background-color:#FBE292;
-    color:#AD6E11;
-    opacity:1;
-  }
-  .el-pdf-size {
-    font-size:12px;
-    font-weight:normal;
-  }
-  i {
-  }
-}
-
-
-.btn.md-pdf.md-large {
-  box-shadow:none;
-  border-radius:6px;
-  i {
-  }
-}
-
-
-
-
-/* メーカーページヘ
--------------------------------------------*/
-.btn.md-maker {
-  background-color:#999;/*#8BB143*/
-  padding-left:20px;
-  padding-right:20px;
-  border-radius:20px;
-  font-size:14px;
-  i {
-    font-size:18px;
-    margin-right:15px;
-    i.right {
-      margin-right:0px;
       margin-left:15px;
     }
-  }
-}
-
-/* ヘルプ、お問い合せ
--------------------------------------------*/
-.btn.md-help {
-  background-color:#E05823;
-  i {
-    &.icon-mail {
-    }
-  }
-}
-
-/* 無料サンプル申し込み
--------------------------------------------*/
-.btn.md-sample-cloth {
-  background-color:#714C44;
-  i {
-    &.icon-mail {
-    }
-  }
-}
-
-/* 法人会員登録
--------------------------------------------*/
-.btn.md-bb {
-  background-color:#355F6F;	/*#365168*/
-  i {
-  }
-}
-
-
-/* インラインブロック ボタン
--------------------------------------------*/
-.btn.md-iblock {
-  display:inline-block;
-}
-
-/* 小さいボタン
--------------------------------------------*/
-.btn.md-small {
-  font-size:12px;
-  font-weight:bold;
-  padding:5px 5px;
-  i {
-    font-size:15px;
-    &.right {
-      margin-left:5px;
-    }
     &.left {
-      margin-right:5px;
+      float:left;
+      margin-right:15px;
     }
   }
-}
-
-/* 大きいボタン
--------------------------------------------*/
-.btn.md-large {
-  font-size:16px;
-  font-weight:bold;
-  padding:12px 10px;
-  border-radius:6px;
-  box-shadow:0 1px 0 1px rgba(0,0,0,0.2);
-  i {
+  /* 小さいボタン
+  -------------------------------------------*/
+  &.md-small {
+    font-size:12px;
+    font-weight:bold;
+    padding:5px 5px;
+    i {
+      font-size:15px;
+      &.right {
+        margin-left:5px;
+      }
+      &.left {
+        margin-right:5px;
+      }
+    }
+  }
+  /* 大きいボタン
+  -------------------------------------------*/
+  &.md-large {
+    font-size:16px;
+    font-weight:bold;
+    padding:16px 20px;
+    border-radius:6px;
+    box-shadow:0 1px 0 1px rgba(0,0,0,0.3);
+    i {
+      font-size:20px;
+      margin-top:-5px;
+    }
+  }
+  /* もっと大きいボタン
+  -------------------------------------------*/
+  &.md-xlarge {
+    font-size:18px;
+    font-weight:bold;
+    padding:20px 20px;
+    border-radius:6px;
+    box-shadow:0 2px 0 1px rgba(0,0,0,0.3);
+    i {
+      font-size:25px;
+      margin-top:-5px;
+      &.fontello-easel,
+      &.fontello-mail {
+        font-size:28px;
+        margin-top:-5px;
+      }
+    }
+  }
+  /* もっともっと大きいボタン
+  -------------------------------------------*/
+  &.md-xxlarge {
     font-size:20px;
+    font-weight:bold;
+    padding:25px 25px;
+    border-radius:7px;
+    box-shadow:0 2px 0 1px rgba(0,0,0,0.3);
+    i {
+      font-size:32px;
+      margin-top:-10px;
+      &.fontello-document {
+        font-size:36px;
+        float:left;
+      }
+      &.fontello-mail {
+        font-size:30px;
+      }
+    }
   }
-}
-
-/* もっと大きいボタン
--------------------------------------------*/
-.btn.md-xlarge {
-  font-size:18px;
-  font-weight:bold;
-  padding:16px 10px;
-  border-radius:6px;
-  box-shadow:0 1px 0 1px rgba(0,0,0,0.2);
-  i.icon-document,
-  i.icon-angle-double-right,
-  i {
-    font-size:25px;
+  /* 複数行ボタン
+  -------------------------------------------*/
+  &.md-line-1-5 i {
+    font-size:22px;
+    margin-top:7px;
   }
-  i.icon-easel,
-  i.icon-mail {
+  &.md-line-2 i {
+    font-size:22px;
+    margin-top:7px;
+  }
+  &.md-line-1-5.md-large i {
     font-size:28px;
-    margin-top:-2px;
+    margin-top:7px;
   }
-}
-
-
-/* もっともっと大きいボタン
--------------------------------------------*/
-.btn.md-xxlarge {
-  font-size:20px;
-  font-weight:bold;
-  padding:20px 10px;
-  border-radius:7px;
-  box-shadow:0 1px 0 1px rgba(0,0,0,0.2);
-  i.icon-angle-double-right,
-  i {
+  &.md-line-2.md-large i {
     font-size:28px;
+    margin-top:7px;
   }
-  i.icon-document {
-    font-size:30px;
+  /* 見積もりボタン
+  -------------------------------------------*/
+  &.md-estimate {
+    background-color:#C63329;
+    i {
+    }
   }
-  i.icon-mail {
-    font-size:30px;
-    margin-top:-2px;
+  /* 「これで見積もる」ボタン
+  -------------------------------------------*/
+  &.md-estimate.md-set-form {
+    background-color:#F5D2D0;
+    border:1px solid #D7716A;
+    color:#CB4138;
+    box-shadow:none;
+    &:hover {
+      border:1px solid #C63329;
+      color:#C63329;
+      background-color:#F2B6B2;
+      opacity:1;
+    }
   }
-}
-
-
-
-
-/* 複数行ボタン
--------------------------------------------*/
-.btn.md-line-1-5 i {
-  font-size:22px;
-  margin-top:7px;
-}
-.btn.md-line-2 i {
-  font-size:22px;
-  margin-top:7px;
-}
-.btn.md-line-1-5.md-large i {
-  font-size:28px;
-  margin-top:7px;
-}
-.btn.md-line-2.md-large i {
-  font-size:28px;
-  margin-top:7px;
+  /* ダウンロード
+  -------------------------------------------*/
+  &.md-download {
+    i:before {
+    }
+    i.fontello-book-1 {
+      font-size:23px;
+      float:left;
+      margin:-1px 0 0 0;
+    }
+  }
+  /* PDFリンク
+  -------------------------------------------*/
+  &.md-pdf {
+    border:1px solid #8FB0C8;
+    background-color:#E0EAFC;
+    color:#517890;
+    border:1px solid #D5A34B;
+    background-color:#FEEAA8;
+    color:#AD6E11;
+    &:hover {
+      border:1px solid #CB9536;
+      background-color:#FBE292;
+      color:#AD6E11;
+      opacity:1;
+    }
+    .el-pdf-size {
+      font-size:12px;
+      font-weight:normal;
+    }
+    i {
+    }
+    &.md-large {
+      box-shadow:none;
+      border-radius:6px;
+      i {
+      }
+    }
+  }
+  /* メーカーページヘ
+  -------------------------------------------*/
+  &.md-maker {
+    background-color:#999;/*#8BB143*/
+    border-radius:30px;
+    font-size:14px;
+    i {
+      font-size:18px;
+      i.right {
+        margin-right:0px;
+      }
+    }
+  }
+  /* ヘルプ、お問い合せ
+  -------------------------------------------*/
+  &.md-help {
+    background-color:#E05823;
+    i {
+      &.fontello-mail {
+      }
+    }
+  }
+  /* 無料サンプル申し込み
+  -------------------------------------------*/
+  &.md-sample-cloth {
+    background-color:#714C44;
+    i {
+      &.fontello-mail {
+      }
+    }
+  }
+  /* 法人会員登録
+  -------------------------------------------*/
+  &.md-bb {
+    background-color:#355F6F;	/*#365168*/
+    i {
+    }
+  }
+  /* インラインブロック ボタン
+  -------------------------------------------*/
+  &.md-iblock {
+    display:inline-block;
+  }
 }

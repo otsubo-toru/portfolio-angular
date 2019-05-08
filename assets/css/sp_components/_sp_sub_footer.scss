@@ -1,0 +1,20 @@
+
+/*-------------------------------------------*/
+/* サブフッター                              */
+/*-------------------------------------------*/
+.sub-footer {
+	display:none;
+	a {
+		&,
+		&:link
+		&:active
+		&:visited {
+			transition:none;
+		}
+	}
+	&.md-ft,
+	&.md-rs,
+	&.md-biz {
+		display:block;
+	}
+}

@@ -1,8 +1,4 @@
 
-
-
-
-
 /*-------------------------------------------*/
 /* 在庫関連                                  */
 /*-------------------------------------------*/
@@ -12,26 +8,24 @@
   font-weight:normal;
   text-align:center;
   display:block;
-}
-.zaiko .el-name {
-  font-weight:bold;
-}
-
-/* 「入荷待ち」
--------------------------------------------*/
-.zaiko.md-no,
-.zaiko.md-end {
-  margin-top:3px;
-  color:#FFF;
-  background-color:#F00;
-  padding:5px;
-}
-
-/* 「在庫僅少」
--------------------------------------------*/
-.zaiko.md-few {
-  margin-top:3px;
-  color:#F00;
-  border:1px dotted #CCC;
-  padding:5px;
+  .el-name {
+    font-weight:bold;
+  }
+  /* 「入荷待ち」
+  -------------------------------------------*/
+  &.md-no,
+  &.md-end {
+    margin-top:3px;
+    color:#FFF;
+    background-color:#F00;
+    padding:5px;
+  }
+  /* 「在庫僅少」
+  -------------------------------------------*/
+  &.md-few {
+    margin-top:3px;
+    color:#F00;
+    border:1px dotted #CCC;
+    padding:5px;
+  }
 }

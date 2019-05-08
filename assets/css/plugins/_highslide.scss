@@ -1,11 +1,10 @@
 
-
-
-
-
 /*-------------------------------------------*/
 /* highslide                                 */
 /*-------------------------------------------*/
+.highslide {
+  overflow:hidden;
+}
 .highslide-wrapper {
   background-color:#FFF;
 }
@@ -16,7 +15,4 @@
   color:#555;
   text-align:left;
   padding:2px 0 0;
-}
-.highslide {
-  overflow:hidden;
 }

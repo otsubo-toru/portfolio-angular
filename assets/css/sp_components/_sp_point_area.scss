@@ -1,0 +1,28 @@
+
+/*-------------------------------------------*/
+/* 「ココがポイント！」                      */
+/*-------------------------------------------*/
+.point-area {
+	.heading.md-point {
+		background:none;
+		background-size:145px;
+		height:auto;
+		text-indent:0px;
+		color:#F28A00;
+		margin-bottom:0px;
+		padding:0;
+		font-size:18px;
+		margin-bottom:-4px;
+		i {
+			margin-right:0px;
+			&:before {
+				font-size:26px;
+				vertical-align:bottom;
+				margin-bottom:3px;
+			}
+		}
+	}
+	.el-item {
+		font-size:14px;
+	}
+}

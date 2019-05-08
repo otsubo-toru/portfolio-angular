@@ -1,4 +1,4 @@
-
+@charset "utf-8";
 
 
 /*-------------------------------------------*/
@@ -11,51 +11,51 @@
   padding:10px;
   border:1px solid #ef8b80;
   font-size:12px;
-}
-.alert .heading,
-.alert .el-heading {
-  color:#df2e1b;
-  font-weight:bold;
-  font-size:14px;
-  margin:0 0 3px;
-}
-.alert .el-body {
-  font-weight:normal;
-  font-size:12px;
-}
+  .heading,
+  .el-heading {
+    color:#df2e1b;
+    font-weight:bold;
+    font-size:14px;
+    margin:0 0 3px;
+  }
+  .el-body {
+    font-weight:normal;
+    font-size:12px;
+  }
 
-/* alert-strong
--------------------------------------------*/
-.alert.md-strong {
-  background-color:#e74c3c;
-  color:white;
-  border:none;
-  box-shadow:0 1px 0 1px #cd2a19 inset;
-}
+  /* alert-strong
+  -------------------------------------------*/
+  &.md-strong {
+    background-color:#e74c3c;
+    color:white;
+    border:none;
+    box-shadow:0 1px 0 1px #cd2a19 inset;
+  }
 
-/* alert.md-caution
--------------------------------------------*/
-.alert.md-caution {
-}
+  /* alert.md-caution
+  -------------------------------------------*/
+  &.md-caution {
+  }
 
-/* alert.md-discount-appeal
--------------------------------------------*/
-.alert.md-discount-appeal {
-  border-width:2px;
-  border-left:none;
-  border-right:none;
-  margin:10px 0;
-}
-.alert.md-discount-appeal .el-copy {
-  font-size:15px;
-  font-weight:bold;
-  text-align:center;
-}
+  /* alert.md-discount-appeal
+  -------------------------------------------*/
+  &.md-discount-appeal {
+    border-width:2px;
+    border-left:none;
+    border-right:none;
+    margin:10px 0;
+    .el-copy {
+      font-size:15px;
+      font-weight:bold;
+      text-align:center;
+    }
+  }
 
-/* alert.md-color-reverse
--------------------------------------------*/
-.alert.md-color-reverse {
-  background-color:#ef8b80;
-  color:#FFF;
-  border:1px solid #ef8b80;
+  /* alert.md-color-reverse
+  -------------------------------------------*/
+  &.md-color-reverse {
+    background-color:#ef8b80;
+    color:#FFF;
+    border:1px solid #ef8b80;
+  }
 }

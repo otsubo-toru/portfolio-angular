@@ -1,0 +1,283 @@
+
+/*-------------------------------------------*/
+/* シリーズ一覧
+/*-------------------------------------------*/
+.collections-area {
+  border-top:3px solid #888;
+  background:#EEE;
+  padding:10px 10px 30px;
+  position:relative;
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    font-size:0;
+    clear: both;
+    visibility:hidden;
+  }
+  /*
+  .heading {
+    margin:0 0 10px;
+    font-size:18px;
+  }
+  */
+  .heading.md-first {
+    margin:5px 0 10px;
+    font-size:20px;
+  }
+  a {
+    color:#005C9C;
+  }
+  .el-head {
+    margin:0 0 15px;
+    .sub-heading {
+      font-weight:bold;
+      margin:0 0 5px;
+      font-size:14px;
+      color:#444;
+    }
+    .el-txt {
+      width:450px;
+      font-size:12px;
+      margin:0 5px 7px;
+      color:#555;
+    }
+    .el-txt.md-wide {
+      width:auto;
+    }
+    a.link-category {
+      font-weight:bold;
+      margin:0 5px;
+    }
+  }
+  hr {
+    margin:0 5px 10px;
+  }
+
+  /* 「トップへ」 */
+  a.to-top {
+    color:#FFF !important;
+    background-color:#515146;
+    display:block;
+    font-size:12px;
+    padding:3px 7px 2px;
+    width:6em;
+    text-align:center;
+    border-radius:3px 0px 0px 0px;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    transition:all 0.2s ease-in-out;
+    &:hover {
+      text-decoration:none;
+      opacity:0.8;
+      filter:alpha(opacity=80);
+      zoom:1;
+    }
+  }
+}
+
+/*-------------------------------------------*/
+/* collections-area.md-select-lineup
+/* 「絞り込み検索」アイテムエリア
+/*-------------------------------------------*/
+.collections-area.md-select-lineup {
+  padding:15px 5px;
+  background:#EEE;
+  border-top:5px solid #CCC;
+  border-bottom:1px solid #CCC;
+  position:relative;
+  .heading.md-sub {
+    font-size:13px;
+    margin-bottom:2px;
+    i:before {
+      font-size:15px;
+      margin:0 3px 2px 0;
+    }
+  }
+
+  /* アイテムリスト */
+  .display-navi,
+  .item-navi {
+    padding:0 5px 10px;
+    margin-bottom:10px;
+    border-bottom:1px solid #CCC;
+    color:#333;
+    &:after {
+      content: ".";
+      display: block;
+      height: 0;
+      font-size:0;
+      clear: both;
+      visibility:hidden;
+    }
+    .btn {
+      font-weight:normal;
+      text-align:center;
+      margin:0 0 5px 0;
+      padding:3px 10px;
+      border-radius:3px;
+      font-size:12px;
+    }
+    li {
+      &.active {
+        background-color:#C64B3A;
+      }
+      &:hover {
+        text-decoration:none;
+        opacity:0.8;
+      }
+    }
+  }
+  .display-navi {
+    .btn {
+      background-color:transparent;
+      border:1px solid #CCC;
+      color:#666;
+      font-weight:normal;
+      font-size:12px;
+      padding:1px 5px;
+      margin:0 0 5px 0;
+      &:hover {
+        opacity:1;
+        color:#555;
+        border:1px solid #BBB;
+      }
+      &.active,
+      &.active:hover {
+        border:1px solid #666;
+        color:#444;
+      }
+      i {
+        margin-right:5px;
+      }
+    }
+  }
+
+  .items .label.md-tile-hidden {
+    display:none;
+  }
+  .item {
+    border-bottom:2px solid #CCC;
+    padding:5px 0;
+    &:hover {
+      border-color:#FF8B08;
+    }
+    .el-thumb img.el-thumb-img {
+      width:100%;
+      height:auto;
+    }
+    .el-price {
+      display:inline-block;
+    }
+    .el-price-note {
+      display:inline-block;
+      font-size:11px;
+      color:#666;
+      font-weight:normal;
+    }
+    .el-maker {
+      display:block;
+      font-weight:normal;
+      font-size:11px;
+      overflow:hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .el-name {
+      display: block;
+      overflow:hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .el-price {
+    }
+  }
+  .pager {
+    clear:both;
+    margin:10px 10px 2px;
+    position:relative;
+    ul {
+      text-align:center;
+    }
+    &:after {
+      content: ".";
+      display: block;
+      height: 0;
+      font-size:0;
+      clear: both;
+      visibility:hidden;
+    }
+    li {
+      display:inline-block;
+      a {
+        &,
+        &:link,
+        &:active,
+        &:visited {
+          color:#666 !important;
+          font-size:15px;
+          display:inline-block;
+          padding:5px 8px;
+          border:1px solid #CCC;
+          border-radius:2px;
+          margin:0 2px 4px;
+        }
+        &:hover {
+          text-decoration:none;
+          border:1px solid #AAA;
+          opacity:1;
+          filter:alpha(opacity=100);
+          zoom:1;
+        }
+        &.prev {
+          position:absolute;
+          left:0px;
+          top:0px;
+        }
+        &.next {
+          position:absolute;
+          right:0px;
+          top:0px;
+        }
+        &.active {
+          color:#333;
+          border:1px solid #666;
+        }
+      }
+    }
+  }
+  /* .collections-area.md-select-lineup.md-list
+  -------------------------------------------*/
+  &.md-list {
+    .g03 {
+      width:auto;
+      float:none;
+    }
+    .grid:first-child .g03:first-child .item {
+      border-top:1px solid #CCC;
+    }
+    .items {
+    }
+    .item {
+      margin-bottom:0;
+      padding:5px 5px 3px;
+      .labels {
+        &.md-kinou .label {
+          background-color:transparent;
+        }
+      }
+      .label.md-tile-hidden {
+        display:inline-block;
+      }
+      .el-thumb {
+        display:inline-block;
+        float:left;
+        margin-right:5px;
+      }
+      .el-body {
+        overflow:hidden;
+      }
+    }
+  }
+}

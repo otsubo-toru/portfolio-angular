@@ -1,0 +1,69 @@
+
+/*===========================================*/
+/* 全般                                      */
+/*===========================================*/
+
+
+.sp-hidden {
+	display:none !important;
+}
+.pc-hidden {
+	display:block !important;
+}
+table.pc-hidden {
+	display:table !important;
+}
+img.pc-hidden {
+	display:inline-block !important;
+}
+
+.sp-scrollx {
+	display: block;
+	width: auto;
+	position: relative;
+	overflow-x: auto;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+}
+
+
+
+
+/*-------------------------------------------*/
+/* フロート関連                              */
+/*-------------------------------------------*/
+.sp-left {float:left;}
+.sp-right {float:right;}
+.sp-none-float {float:none;}
+.sp-center {
+	display:block;
+	margin-left:auto !important;
+	margin-right:auto !important;
+}
+.sp-clear {clear:both;}
+.sp-clearfix {
+	overflow:hidden;
+	_zoom:1;/*ie6*/
+}
+
+/*-------------------------------------------*/
+/* ボックス化                                */
+/*-------------------------------------------*/
+.sp-block {
+	display:block !important;
+}
+.sp-block:hover {
+	text-decoration:none;
+}
+.sp-iblock {
+	display:inline-block !important;
+}
+.sp-iblock:hover {
+	text-decoration:none;
+}
+.sp-tcell {
+	display:table-cell !important;
+}
+.sp-tcell:hover {
+	text-decoration:none;
+}

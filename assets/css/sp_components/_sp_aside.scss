@@ -1,0 +1,34 @@
+
+/*-------------------------------------------*/
+/* 補足説明等                                */
+/*-------------------------------------------*/
+.aside {
+	margin:0 5px;
+	padding:8px 5px;
+	/* .aside.md-guidance
+	-------------------------------------------*/
+
+	/* .aside.md-info
+	-------------------------------------------*/
+	&.md-info {
+	}
+	&.md-info .heading.md-info {
+		margin:-10px -5px 10px;
+		border-radius:2px 2px 0 0;
+	}
+
+	/* .aside.md-help
+	-------------------------------------------*/
+	&.md-help .heading.md-help {
+		padding: 5px 2px;
+		margin:-8px -5px 10px;
+		font-size: 15px;
+	}
+
+
+	/* .aside.md-bb
+	-------------------------------------------*/
+	&.md-bb .heading.md-bb {
+		margin:-8px -5px 10px;
+	}
+}
