@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+
+
+
+/*=========================================*/
+/*layout*/
+/*=========================================*/
+
+/*-------------------------------------------*/
+/* 全体レイアウト                            */
+/*-------------------------------------------*/
+body {
+	font-family:"メイリオ", Meiryo, Osaka, sans-serif;
+	/*font-family:"ＭＳ Ｐゴシック","MS P Gothic",Osaka,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",sans-serif;*/
+	font-size:80%;
+	color:#333;
+}
+html>/**/body {
+	font-size:13px;
+}/*~ie7*/
+
+.page {
+	text-align:left;
+	width:100%;
+}
+
+
+/*-------------------------------------------*/
+/* ヘッダー                                  */
+/*-------------------------------------------*/
+.header {
+	width:100%;
+	position:relative;
+}
+.header > .header-content {
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+.header:after,
+.header > .header-content:after {
+	content:"."; 
+	display:block; 
+	height:0; 
+	font-size:0;	
+	clear:both; 
+	visibility:hidden;
+}
+.header .heading.md-page-title {
+	width:40%;
+	margin-bottom:0;
+	line-height:1.0;
+}
+.header .heading.md-page-title .logo-img {
+	margin:0 0 5px
+}
+.header .heading.md-page-title:before {
+	content:"";
+	display:inline-block;
+	width:30px;
+	height:60px;
+	background-color:#333;
+	margin:0 10px 0 0;
+	vertical-align:middle;
+}
+
+/*-------------------------------------------*/
+/* ヘッダー                                  */
+/*-------------------------------------------*/
+.global-navi {
+	width:60%;
+	float:left;
+	position:absolute;
+	bottom:0px;
+	right:0px;
+}
+.global-navi .gnav {
+	width:100%;
+	margin:0 auto;
+	text-align:right;
+}
+.global-navi .gnav:after {
+	content:"."; 
+	display:block;
+	height:0; 
+	font-size:0;	
+	clear:both; 
+	visibility:hidden;
+}
+.global-navi .gnav .el-item {
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+	display:inline-block;
+	width:15%;
+	margin:0 0 0 10px;
+}
+.global-navi .gnav .el-item > a {
+	display:block;
+	padding:20px 0 5px;
+	text-align:center;
+	color:#888;
+	font-size:14px;
+	border-bottom:2px solid #999;
+}
+.global-navi .gnav .el-item > a:hover {
+	text-decoration:none;
+	color:#555;
+	border-color:#2987D8;
+}
+
+
+/*-------------------------------------------*/
+/* パンくずリスト                            */
+/*-------------------------------------------*/
+.path {
+	color:#222;
+	font-size:12px;
+	padding:12px 0 8px 0;/*現行に見た目合わせる*/
+	float:left;
+	display:inline;/*ie6*/
+	/*width:740px;*/
+	width:auto;
+	max-width:740px;
+	margin:0 0 0 10px;
+}
+.path ul li {
+	list-style:none;
+	padding-right:3px;
+	display:inline;
+}
+.path ul li.visited {
+	text-decoration:underline;
+}
+
+
+/*-------------------------------------------*/
+/* メイン                                      */
+/*-------------------------------------------*/
+.main-wrapper {
+	width:960px;
+	margin:0 auto;
+}
+
+
+/*-------------------------------------------*/
+/* サイドバー                                */
+/*-------------------------------------------*/
+.sidebar {
+	float:right;
+	width:240px;
+	padding:20px 0;
+}
+
+
+
+/*-------------------------------------------*/
+/* コンテンツ                                */
+/*-------------------------------------------*/
+.contents {
+	float:left;
+	font-family:"メイリオ", Meiryo, Osaka, sans-serif;
+	width:960px;
+	overflow:visible;
+	position:relative;
+	padding:20px 0;
+	margin:0 10px 20px 0;
+}
+/* clearfix処理 */
+.contents:after {
+	content:"."; 
+	display:block; 
+	height:0; 
+	font-size:0;	
+	clear:both; 
+	visibility:hidden;
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------------*/
+/* フッター                                  */
+/*-------------------------------------------*/
+.footer {
+	text-align:center;
+	clear:both;
+	margin:20px 0 0;
+	background-color:#EEE;
+}
+.footer > .footer-content {
+	width:960px;
+	margin:0 auto;
+	padding:10px 0;
+}
+.footer ul.fnav {
+	line-height:1.3em;
+	margin:8px 0;
+}
+.footer .fnav li {
+	color:#999999;
+	line-height:1.3em;
+	list-style:none;
+	display:inline;
+}
+.footer .fnav li a {
+	display:inline-block;
+	zoom:1;
+}
+.footer .f_pannel {
+	color:#808000;
+	background:#ffc;
+	border:2px solid #666;
+	font-weight:bold;
+	width:460px;
+	margin:10px auto;
+	padding:10px;
+}
+/*footer_sr 110118hira*/
+.footer .f_pannel p {
+	font-size:90%;
+	font-weight:normal;
+	padding:7px 0 0 0;
+}
+.footer .f_pannel a {
+	color:#808000;
+}
+
+
+
+/*-------------------------------------------*/
+/* レスポンシブ関連                          */
+/*-------------------------------------------*/
+
+
+
+
+
+
+
+
+

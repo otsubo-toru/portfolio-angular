@@ -1,0 +1,14 @@
+
+/*=========================================*/
+/*reset
+/*=========================================*/
+body, div, p, h1, h2, h3, h4, h5, h6, table, tr, th, td, fieldset, pre, code, ul, ol, li, dl, dt, dd, textarea, blockquote, address, caption, form {
+  //font-family:$legacy-font;
+  font-family:$default-font;
+  list-style:none;
+  line-height:1.5;
+  border-collapse:collapse;
+  margin:0;
+  padding:0;
+  font-size:100%;
+}

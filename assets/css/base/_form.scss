@@ -1,0 +1,48 @@
+
+
+
+
+/* フォーム関係
+-----------------------------------------*/
+input {
+  &[type=text] {
+    width:12em;
+  }
+  &[type=checkbox] {
+    width:1em;
+    vertical-align:middle;
+  }
+  &[type=radio] {
+    width:1em;
+    vertical-align:middle;
+  }
+  &[type=radio],  x:-moz-any-link {
+    margin-top:-2px;
+  }
+  &[type=file] {
+
+  }
+}
+textarea {
+  font-size:1em;
+  padding:0.3em 1%;
+  width:98%;
+}
+select {
+  optgroup {
+    text-decoration:none;
+    background-color:#E5E5E5;
+    color:#666;
+    padding:3px 0;
+  }
+}
+
+
+
+form .field_with_errors {
+  /*
+  padding:5px;
+  background-color:#fbdedb;
+  border:1px solid #ef8b80;
+  */
+}

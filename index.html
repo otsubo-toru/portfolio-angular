@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="description" content="@yield('description')">
+  <meta name="keywords" content="@yield('keywords')">
+  <title>@yield('title')</title>
+  <meta name="robots" content="noydir">
+  <meta name="robots" content="noodp">
+  <meta name="robots" content="noindex,nofollow">
+  <base href="https://otsubo-toru.github.io/portfolio-angular/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="stylesheet" type="text/css" href="/assets/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/assets/js/magnific-popup.css">
+  <link rel="stylesheet" href="/assets/css/fontello/css/fontello.css">
+  <link rel="stylesheet" href="/assets/css/fontello/css/animation.css">
+  <!--[if IE 7]>
+  <link rel="stylesheet" href="/assets/css/fontello/css/fontello-ie7.css">
+  <![endif]-->
+
+<link rel="stylesheet" href="styles.a4b04417597bfcd885a9.css"></head>
+
+
+<body>
+  <div id="PAGE" class="page">
+    <app-header></app-header>
+    <app-gnav></app-gnav>
+    <div id="CONTAINER" class="container">
+        <!--@include('components.sidebar')-->
+  			<div id="MAIN" class="main">
+  				<article id="article" class="article">
+            <app-root></app-root>
+  				</article>
+        </div>
+  			<!-- <app-sidebar></app-sidebar> -->
+      </div>
+    </div>
+    <app-footer></app-footer>
+  </div>
+
+  <script src="/assets/js/jquery-1.10.2.min.js"></script>
+  <script src="/assets/js/cookie/jquery.cookie.js"></script>
+  <script src="/assets/js/csv/jquery.csv.js"></script>
+  <script src="/assets/js/mousewheel/jquery.mousewheel.min.js"></script>
+  <script src="/assets/js/fixHeight/jquery.fixHeight.js"></script>
+  <script src="/assets/js/smoothscroll/jquery.smoothscroll.js"></script>
+  <script src="/assets/js/pagetopBtn/jquery.pagetopBtn.js"></script>
+  <script src="/assets/js/spSwitch/jquery.spSwitch.js"></script>
+  <script>
+  $(function() {
+  	$(window).spSwitch({
+      defaultCssFiles : ["/assets/css/sp_common.css"],
+  		cssFiles : [
+  			"/assets/css/sp_common.css"
+  		]
+  	});
+  });
+  </script>
+  <script src="/assets/js/jquery.magnific-popup.js"></script>
+  <script type="text/javascript">
+  $(function() {
+  	/*
+  	$(".magnific-popup-gallery").magnificPopup({
+  		delegate: '.magnific-popup',
+  		type: 'image',
+  		tLoading: 'Loading image #%curr%...',
+  		closeOnContentClick: true,
+  		closeBtnInside: false,
+  		fixedContentPos: true,
+  		gallery: {
+  			enabled: true,
+  			navigateByImgClick: true,
+  			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+  		},
+  		image: {
+  			verticalFit: true
+  		},
+  		midClick: true,
+  		removalDelay: 300,
+  		mainClass: 'my-mfp-slide-bottom'
+  	});
+  	*/
+  	$(".magnific-popup").magnificPopup({
+  		type: 'image',
+  		tLoading: 'Loading image #%curr%...',
+  		closeOnContentClick: true,
+  		closeBtnInside: false,
+  		fixedContentPos: true,
+  		image: {
+  			verticalFit: true
+  		},
+  		zoom: {
+  			enabled: true,
+  			duration: 300 // don't foget to change the duration also in CSS
+  		}
+  	});
+
+    $.ajax({
+      type: 'GET',
+      url: 'http://localhost:3000/api/items',
+      dataType: 'jsonp',
+      jsonpCallback: 'logResults',
+      // jsonp: 'onJsonPLoad',
+      error: function(json, status, error) {
+        console.log('error!: ');
+        console.log(json);
+        console.log(status);
+        console.log(error);
+      },
+      success: function(json) {
+        console.log('success!: ');
+        console.log(json);
+      },
+    });
+    function logResults(json){
+      console.log(json);
+    }
+
+  });
+  </script>
+
+
+<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.1e04665e16f944715fd2.js" nomodule></script><script type="text/javascript" src="polyfills.8bbb231b43165d65d357.js"></script><script type="text/javascript" src="main.fb74fa420675a8ffa3ce.js"></script></body>
+</html>

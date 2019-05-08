@@ -1,0 +1,65 @@
+
+
+
+
+/* リスト関係
+-----------------------------------------*/
+ol.li02 > li,
+ul.li02 > li {margin-top:2px; margin-bottom:2px;}
+ol.li05 > li,
+ul.li05 > li {margin-top:5px; margin-bottom:5px;}
+ol.li08 > li,
+ul.li08 > li {margin-top:8px; margin-bottom:8px;}
+ol.li10 > li,
+ul.li10 > li {margin-top:10px; margin-bottom:10px;}
+ol.li15 > li,
+ul.li15 > li {margin-top:15px; margin-bottom:15px;}
+ol.li20 > li,
+ul.li20 > li {margin-top:20px; margin-bottom:20px;}
+ol.li25 > li,
+ul.li25 > li {margin-top:25px; margin-bottom:25px;}
+ol.li30 > li,
+ul.li30 > li {margin-top:30px; margin-bottom:30px;}
+
+ul.disc li {
+  margin-left:1.3em;
+  list-style:disc outside;
+}
+ul.num li,
+ol li {
+  margin-left:1.7em;
+  list-style:decimal outside;
+}
+
+ul.h-list {
+  /*inline-block時の余分なスペースを削除*/
+  letter-spacing: -.40em;
+
+  li {
+    display:inline-block;
+    *display:inline;
+    margin-left:10px;
+    /*inline-block時の余分なスペースを削除*/
+    letter-spacing: normal;
+  }
+  li:first-child {
+    margin-left:0px;
+  }
+}
+
+ul.v-list li {
+  display:block;
+}
+
+
+dl {
+  dt {
+    font-weight:bold;
+    margin:0;
+  }
+  dd {
+    font-weight:normal;
+    margin:0 0 5px 10px;
+    color:#555;
+  }
+}

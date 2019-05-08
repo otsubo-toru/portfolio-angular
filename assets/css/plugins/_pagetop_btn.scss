@@ -1,0 +1,40 @@
+
+
+
+
+/*-------------------------------------------*/
+/* pagetopBtn                                */
+/*-------------------------------------------*/
+
+/*「トップへ」*/
+#PAGETOP_BTN {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display:block;
+  z-index:999;
+}
+#PAGETOP_BTN a {
+  font-size:14px;
+  font-weight:bold;
+  text-decoration:none;
+  color:#FFF;
+  text-align:center;
+  display:table-cell;
+  *display:block;
+  width:60px;
+  height:60px;
+  vertical-align:middle;
+  border-radius:45px;
+  background-color:rgba(0,0,0,0.5);
+  *background-color:#444;
+  transition:all 0.2s ease-in-out;
+}
+#PAGETOP_BTN a i.icon-arr-up {
+  font-size:20px;
+}
+#PAGETOP_BTN a:hover {
+  text-decoration: none;
+  background-color:rgba(0,0,0,0.6);
+  *background: #333;
+}

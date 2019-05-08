@@ -1,0 +1,85 @@
+
+
+
+
+
+/*-------------------------------------------*/
+/* 背景                                      */
+/*-------------------------------------------*/
+
+/* 背景色
+-----------------------------------------*/
+.bg-red {background-color:#C63329 !important; color:#FFF;}
+.bg-red01 {background-color:#C00 !important; color:#FFF;}
+.bg-thin-red {background-color:#FADBDA !important;}
+.bg-blue {background-color:#4BAA9F !important; color:#FFF;}
+.bg-blue01 {background-color:#2A8CBE !important; color:#FFF;}
+.bg-orange {background-color:#F7941D !important; color:#FFF;}
+.bg-orange01 {background-color:#F36A26 !important; color:#FFF;}
+.bg-green {background-color:#90C030 !important; color:#FFF;}
+.bg-green01{background-color:#53820F !important; color:#FFF;}
+.bg-brown {background-color:#A0763F !important; color:#FFF;}
+.bg-gray {background-color:#555 !important; color:#FFF;}
+.bg-gray01 {background-color:#333 !important; color:#FFF;}
+.bg-gray02 {background-color:#999 !important;}
+.bg-white {background-color:#FFF !important;}
+
+
+
+/*-------------------------------------------*/
+/* ボーダー                                  */
+/*-------------------------------------------*/
+.bt01 {border-top:1px solid #CCC !important;}
+
+.bb01 {border-bottom:1px solid #CCC !important;}
+.bb02 {border-bottom:1px solid #999 !important;}
+.bb_rd,
+.bb-red {border-bottom:1px solid #C63329 !important;}
+.bb-none {border-bottom:none !important;}
+
+.bh01 {
+ border-top:1px solid #CCC !important;
+ border-bottom:1px solid #CCC !important;
+}
+
+.bl01 {border-left:1px solid #CCC !important;}
+
+.br01 {border-right:1px solid #CCC !important;}
+
+.b00 {border:1px dotted #CCC !important;}
+.b01,
+.b01-ccc {
+ border:1px solid #CCC !important;
+}
+.b01-999 {
+ border:1px solid #999 !important;
+}
+.b01-aaa {
+ border:1px solid #aaa !important;
+}
+
+
+
+/*-------------------------------------------*/
+/* 回転                                      */
+/*-------------------------------------------*/
+.rot01 {transform: rotate(1deg);}
+.rot02 {transform: rotate(2deg);}
+.rot03 {transform: rotate(3deg);}
+.rot04 {transform: rotate(4deg);}
+.rot05 {transform: rotate(5deg);}
+.rot06 {transform: rotate(6deg);}
+.rot07 {transform: rotate(7deg);}
+.rot08 {transform: rotate(8deg);}
+.rot09 {transform: rotate(9deg);}
+.rot10 {transform: rotate(10deg);}
+.rot-01 {transform: rotate(-1deg);}
+.rot-02 {transform: rotate(-2deg);}
+.rot-03 {transform: rotate(-3deg);}
+.rot-04 {transform: rotate(-4deg);}
+.rot-05 {transform: rotate(-5deg);}
+.rot-06 {transform: rotate(-6deg);}
+.rot-07 {transform: rotate(-7deg);}
+.rot-08 {transform: rotate(-8deg);}
+.rot-09 {transform: rotate(-9deg);}
+.rot-10 {transform: rotate(-10deg);}

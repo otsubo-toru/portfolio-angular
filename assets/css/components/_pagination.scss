@@ -1,0 +1,38 @@
+
+
+
+/*-------------------------------------------*/
+/* pagination
+/*-------------------------------------------*/
+.pagination {
+  display:block;
+  text-align:center;
+  padding:20px 0;
+  font-size:1rem;
+  .page,
+  .next,
+  .last,
+  .prev,
+  .first {
+    display:inline-block;
+    a {
+      display:inline-block;
+      padding:5px 10px;
+      border:1px solid #CCC;
+    }
+  }
+  .page-item {
+    display:inline-block;
+  }
+  .page-link {
+    display:block;
+    padding:5px 15px;
+    border:1px solid #CCC;
+  }
+  .current {
+    font-weight:bold;
+    display:inline-block;
+    padding:5px 10px;
+    border:1px solid #CCC;
+  }
+}

@@ -1,0 +1,169 @@
+
+
+
+
+
+
+
+/*-------------------------------------------*/
+/* 参考価格                                  */
+/*-------------------------------------------*/
+.sample-price-area {
+  border:3px solid #E5E5E5;
+  padding:5px;
+  border-radius:5px;
+}
+.sample-price-area .heading.md-sample-price {
+  background-color:#E5E5E5;
+  color:#444;
+  padding:5px 10px;
+  margin:-5px -5px 5px;
+}
+.heading.md-sample-price.md-outside {
+  font-size:15px;
+  color:#777;
+  line-height:1.0;
+}
+.sample-price-area .el-body {
+  padding:5px;
+}
+.sample-price-area .el-item-name {
+  font-weight:bold;
+  margin:0 0 3px;
+}
+.sample-price-area .el-maker-price {
+  display:inline;
+  color: #666;
+  font-size: 14px;
+  font-weight: normal;
+}
+.sample-price-area .el-price {
+  display:inline;
+  color: #BC3C33;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+/* .sample-price-area.md-bordered
+-------------------------------------------*/
+.sample-price-area.md-bordered {
+  border-width:3px;
+  border-color:#E5E5E5;
+  border-style:solid;
+  border-left:none;
+  border-right:none;
+  border-radius:0px;
+}
+
+
+
+
+
+
+
+
+/* 参考価格
+-------------------------------------------*/
+
+.sample-price-area.md-compact {
+}
+
+.sample-price-area.md-compact {
+  font-family:"メイリオ", Meiryo, Osaka, sans-serif;
+  border:4px solid #DDD;
+  padding:10px 10px 0;
+  border-radius:3px;
+}
+.sample-price-area.md-compact p {
+  display:block;
+}
+.sample-price-area.md-compact p.name {
+  margin:0 0 2px;
+  font-weight:bold;
+  font-size:14px;
+}
+.sample-price-area.md-compact .el-maker-price {
+  color:#777;
+  font-size:12px;
+  margin:2px 0;
+}
+.sample-price-area.md-compact .el-description {
+  color:#333;
+  margin:0 1em 7px;
+}
+.sample-price-area.md-compact .el-price {
+  font-weight:bold;
+  color:#BC3C33;
+  font-size:16px;
+  margin:0 0 0 20px
+}
+.sample-price-area.md-compact .top_icon_area {
+  text-align:center;
+  margin:0 0 5px;
+}
+.sample-price-area.md-compact .top_icon_area img {
+  background-color:#999;
+  border-radius:3px;
+  width:70px;
+  height:70px;
+  margin:0 4px 5px 0;
+}
+.sample-price-area.md-compact img.label_discount {
+  vertical-align:baseline;
+  margin:0 0 -4px;
+}
+
+
+
+/* 参考価格
+-------------------------------------------*/
+
+.sample-price-area.md-basic {
+}
+
+.sample-price-area.md-basic {
+  font-family:"メイリオ", Meiryo, Osaka, sans-serif;
+  border-top:4px solid #DDD;
+  border-bottom:4px solid #DDD;
+  padding:10px 10px 0;
+  border-radius:3px;
+}
+.sample-price-area.md-basic p {
+  display:block;
+}
+.sample-price-area.md-basic p.name {
+  margin:0 0 2px;
+  font-weight:bold;
+  font-size:14px;
+}
+.sample-price-area.md-basic .el-maker-price {
+  color:#777;
+  font-size:12px;
+  margin:2px 0;
+}
+.sample-price-area.md-basic .el-description {
+  color:#333;
+  margin:0 1em 7px;
+}
+.sample-price-area.md-basic .el-price {
+  font-weight:bold;
+  color:#BC3C33;
+  font-size:16px;
+  margin:0 0 0 20px
+}
+.sample-price-area.md-basic .top_icon_area {
+  text-align:center;
+  margin:0 0 5px;
+}
+.sample-price-area.md-basic .top_icon_area img {
+  background-color:#999;
+  border-radius:3px;
+  width:70px;
+  height:70px;
+  margin:0 4px 5px 0;
+}
+.sample-price-area.md-basic img.label_discount {
+  vertical-align:baseline;
+  margin:0 0 -4px;
+}

@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+
+
+/*===========================================*/
+/* コンポーネンツ                            */
+/*===========================================*/
+
+
+
+.heading.md-page-top {
+	font-size:36px;
+}
+.heading.md-page-top .el-sub-title {
+	font-size:22px;
+	color:#999;
+	margin-left:20px;
+}
+
+.heading.md-top {
+	background-color:#666;
+	margin-bottom:20px;
+}
+
+
+.heading.md-main {
+	border-color:#DDD;
+	font-size:22px;
+	color:#777;
+	padding-left:5px;
+	margin-bottom:20px;
+	border-bottom:1px solid #FFF;
+	box-shadow:0px 1px 0px 0px #DDD;
+}
+.heading.md-main .el-sub-title {
+	color:#999;
+	font-size:15px;
+}
+
+.heading.md-aside {
+	font-size:18px;
+	margin-bottom:10px;
+}
+
+.aside {
+	padding:20px;
+}
+
+
+
+
+.item .el-name {
+	font-weight:normal;
+}
+.item .el-txt {
+	font-size:12px;
+	color:#555;
+}
+
+
+

@@ -1,0 +1,30 @@
+
+
+
+
+
+/*-------------------------------------------*/
+/* table-hover                               */
+/*-------------------------------------------*/
+.table-hover {
+
+  th, td {
+    /*transition:all 0.1s ease-in-out;*/
+  }
+  th.hover {
+    background:#D6D6D6;
+  }
+  td.hover {
+    background:#F5F5F5;
+  }
+  th.hovercell {
+    background:#E5E5E5;
+  }
+  td.hovercell {
+    background:#F5F5F5;
+  }
+  th.click {
+  }
+  td.click {
+  }
+}

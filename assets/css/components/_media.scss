@@ -1,0 +1,134 @@
+
+
+/*-------------------------------------------*/
+/* media                                     */
+/*-------------------------------------------*/
+.media {
+  *zoom:1;
+  display:block;
+}
+.media:after {
+  content:"\0020";
+  display:block;
+  height:0;
+  clear:both;
+  overflow:hidden;
+  visibility:hidden;
+}
+.media figure,
+.media .el-figure,
+.media .el-thumb {
+  float:left;
+  margin-right:10px;
+}
+.media .item figure,
+.media .item .el-figure,
+.media .item .el-thumb {
+  float:none;
+  margin-right:0px;
+}
+.media figure img,
+.media .el-figure img {
+  display:inline-block;
+}
+.media figure.right,
+.media .el-figure.right,
+.media .el-thumb.right,
+.media figure.md-right,
+.media .el-figure.md-right,
+.media .el-thumb.md-right {
+  float:right;
+  margin-right:0px;
+  margin-left:10px;
+}
+.media .el-body {
+  overflow:hidden;
+}
+.media .el-caption {
+  font-size:12px;
+  color:#666;
+}
+
+/* md-gutter
+-------------------------------------------*/
+.media.md-gutter05 figure,
+.media.md-gutter05 .el-figure,
+.media.md-gutter05 .el-thumb {
+  margin-right:5px;
+}
+.media.md-gutter05 figure.right,
+.media.md-gutter05 .el-figure.right,
+.media.md-gutter05 .el-thumb.right,
+.media.md-gutter05 figure.md-right,
+.media.md-gutter05 .el-figure.md-right,
+.media.md-gutter05 .el-thumb.md-right {
+  margin-right:0px;
+  margin-left:5px;
+}
+
+.media.md-gutter20 figure,
+.media.md-gutter20 .el-figure,
+.media.md-gutter20 .el-thumb {
+  margin-right:20px;
+}
+.media.md-gutter20 figure.right,
+.media.md-gutter20 .el-figure.right,
+.media.md-gutter20 .el-thumb.right,
+.media.md-gutter20 figure.md-right,
+.media.md-gutter20 .el-figure.md-right,
+.media.md-gutter20 .el-thumb.md-right {
+  margin-right:0px;
+  margin-left:20px;
+}
+
+/* md-table
+-------------------------------------------*/
+.media.md-table {
+  display:table;
+}
+.media.md-table figure,
+.media.md-table .el-figure,
+.media.md-table .el-thumb {
+  display:table-cell;
+  margin-right:0;
+  padding-right:10px;
+}
+.media.md-table figure img,
+.media.md-table .el-figure img,
+.media.md-table .el-thumb img {
+  display:block;
+}
+.media.md-table figure.right,
+.media.md-table .el-figure.right,
+.media.md-table .el-thumb.right,
+.media.md-table figure.md-right,
+.media.md-table .el-figure.md-right,
+.media.md-table .el-thumb.md-right {
+  margin-left:0;
+  padding-right:0px;
+  padding-left:10px;
+}
+.media.md-table .el-body {
+  display:table-cell;
+  vertical-align:top;
+  overflow:hidden;
+}
+.media.md-table .el-body.middle,
+.media.md-table .el-body.md-middle {
+  vertical-align:middle;
+}
+
+
+.media.md-table.md-gutter05 figure,
+.media.md-table.md-gutter05 .el-figure,
+.media.md-table.md-gutter05 .el-thumb {
+  padding-right:5px;
+}
+.media.md-table.md-gutter05 figure.right,
+.media.md-table.md-gutter05 .el-figure.right,
+.media.md-table.md-gutter05 .el-thumb.right,
+.media.md-table.md-gutter05 figure.md-right,
+.media.md-table.md-gutter05 .el-figure.md-right,
+.media.md-table.md-gutter05 .el-thumb.md-right {
+  padding-left:5px;
+}

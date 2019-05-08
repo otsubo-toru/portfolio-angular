@@ -1,0 +1,233 @@
+
+
+
+
+
+
+/*-------------------------------------------*/
+/* icons                                     */
+/*-------------------------------------------*/
+.icons {
+  display:block;
+  width:100%;
+  /*inline-block時の余分なスペースを削除*/
+  letter-spacing: -.40em;
+}
+.icons .el-icon {
+  display:inline-block;
+  *display:inline;
+  margin:2px 3px 2px 0;
+  /*inline-block時の余分なスペースを削除*/
+  letter-spacing: normal;
+}
+.icons .el-icon img {
+  vertical-align:middle;
+}
+
+/* .icons.md-top
+-------------------------------------------*/
+.icons.md-top {
+  overflow:hidden;
+  width:auto;
+}
+.icons.md-top img {
+  width:75px;
+  height:75px;
+  background-color:$main-color;
+  border-radius:3px;
+  margin-left:5px;
+  color:#FFF;
+  line-height:1.1;
+  font-size:13px;
+  font-weight:normal;
+  letter-spacing:0em;
+  vertical-align:middle;
+}
+.icons.md-top img:first-child {
+  margin-left:0px;
+}
+.icons.md-top .el-icon {
+  *display:block;
+  *float:left;
+  width:75px;
+  height:75px;
+  margin:5px 5px 0 0;
+  position:relative;
+  vertical-align:middle;
+}
+.icons.md-top.t_center .el-icon,
+.icons.md-top.t-center .el-icon {
+  /* t-center時の不具合調整 */
+  text-align:left;
+}
+.icons.md-top .el-icon img {
+  margin:0 !important;
+  position:absolute;
+  top:0;
+  bottom:0;
+  *position:static;
+  vertical-align:middle;
+  text-align:left;
+}
+.icons.md-top .el-icon-source {
+  font-family:"メイリオ", Meiryo, Osaka, sans-serif !important;
+  width:69px;
+  max-width:69px;
+  height:69px;
+  background-color:$main-color;
+  color:#FFF;
+  font-weight:bold;
+  font-size:16px;
+  padding:3px;
+  line-height:1.1;
+  text-align:center;
+  border-radius:4px;
+  overflow:hidden;
+  word-wrap:normal;
+  white-space:nowrap;
+  display:table-cell;
+  vertical-align:middle;
+}
+/*アイコンフォントfontello用*/
+.icons.md-top i.el-icon-source {
+  width:75px;
+  max-width:75px;
+  height:75px;
+  background-color:#FFF;
+  color:$main-color;
+  font-weight:bold;
+  padding:0px;
+  text-align:center;
+  border-radius:4px;
+  overflow:hidden;
+  word-wrap:normal;
+  white-space:nowrap;
+  vertical-align:middle;
+  position:absolute;
+  top:0;
+  bottom:0;
+  *position:static;
+  font-size:75px;
+  line-height:1.0;
+}
+.icons.md-top .el-icon-source.md-size {
+  line-height:0.95;
+  font-size:18px;
+  *line-height:1.0;
+}
+.icons.md-top .el-icon-source.md-bouen {
+  font-size:28px;
+}
+.icons.md-top .el-icon-source.md-quantity,
+.icons.md-top .el-icon-source.md-color-length,
+.icons.md-top .el-icon-source.md-series-length {
+}
+.icons.md-top .el-icon-source.md-souryou,
+.icons.md-top .el-icon-source.md-daibiki,
+.icons.md-top .el-icon-source.md-kinou {
+  font-size:28px;
+}
+.icons.md-top .el-icon-source.md-souryou.md-souryou-alt {
+  font-size:26px;
+  line-height:1.0;
+}
+.icons.md-top .el-icon-source.md-souryou.md-large {
+  font-size:31px;
+  line-height:1.0;
+}
+.icons.md-top .el-icon-source.md-souryou.md-price {
+  font-size: 20px;
+}
+.icons.md-top .el-icon-source.md-nouki {
+}
+.icons.md-top .el-icon-source.md-color-sample {
+  font-size:17px;
+  text-align:left;
+}
+.icons.md-top .el-icon-source .t_left,
+.icons.md-top .el-icon-source .t-left {
+  display:block;
+  text-align:left;
+}
+.icons.md-top .el-icon-source .t_right,
+.icons.md-top .el-icon-source .t-right {
+  display:block;
+  text-align:right;
+}
+.icons.md-top .el-icon-source .t_center,
+.icons.md-top .el-icon-source .t-center {
+  display:block;
+  text-align:center;
+}
+
+
+/* .icons.md-top.md-large
+---------------------------------------------*/
+.icons.md-top.md-large img {
+  width:90px;
+  height:90px;
+  border-radius:6px;
+}
+.icons.md-top.md-large .el-icon {
+  width: 90px;
+  height: 90px;
+}
+.icons.md-top.md-large .el-icon-source {
+  width: 80px;
+  max-width: 80px;
+  height: 80px;
+  padding: 5px;
+  display:table-cell;
+  vertical-align: middle;
+  overflow:hidden;
+  font-size:20px;
+  border-radius:6px;
+}
+.icons.md-top.md-large i.el-icon-source {
+  width:90px;
+  max-width:90px;
+  height:90px;
+  font-size:90px;
+  padding:0px;
+  border-radius:6px;
+}
+.icons.md-top.md-large .el-icon-source.md-color-length {
+}
+.icons.md-top .el-icon-source.md-bouen {
+  font-size:34px;
+}
+.icons.md-top.md-large .el-icon-source.md-nouki {
+  font-size: 19px;
+  line-height:1.3;
+}
+.icons.md-top.md-large .el-icon-source.md-color-sample {
+  font-size:19px;
+  text-align:left;
+}
+.icons.md-top.md-large .el-icon-source.md-daibiki,
+.icons.md-top.md-large .el-icon-source.md-souryou {
+  font-size: 31px;
+  line-height: 1.1;
+}
+.icons.md-top.md-large .el-icon-source.md-souryou.md-price {
+  font-size: 24px;
+}
+.icons.md-top.md-large .el-icon-source.md-souryou.md-souryou-alt {
+  font-size: 34px;
+}
+
+
+
+
+/* .icons.md-feat
+-------------------------------------------*/
+.icons.md-feat {
+  text-align:right;
+}
+.icons.md-feat .el-icon {
+  margin:0 0 3px 3px;
+}
+.icons.md-feat .el-icon img {
+  width:auto;
+  height:32px;
+}

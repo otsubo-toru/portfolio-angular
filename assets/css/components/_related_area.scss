@@ -1,0 +1,25 @@
+
+
+
+
+/*-------------------------------------------*/
+/* 関連商品一覧                              */
+/*-------------------------------------------*/
+
+.related-area {
+  .item .el-thumb,
+  .item .el-name,
+  .item .el-price {
+    display:block;
+  }
+  .item .el-thumb {
+    text-align:center;
+  }
+  .item .el-name {
+    color:#333;
+    font-weight:bold;
+  }
+  .item .el-price {
+    color:#C63329;
+  }
+}

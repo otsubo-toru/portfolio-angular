@@ -1,0 +1,111 @@
+
+/*-------------------------------------------*/
+/* コンテンツ
+/*-------------------------------------------*/
+.section {
+  clear:both;
+  overflow:visible !important;
+  margin:0 0 50px;
+  padding:0;
+}
+/* clearfix処理 */
+.section:after {
+  content:".";
+  display:block;
+  height:0;
+  font-size:0;
+  clear:both;
+  visibility:hidden;
+}
+
+
+/*-------------------------------------------*/
+/* フロート関連                              */
+/*-------------------------------------------*/
+.left {float:left;}
+.right {float:right;}
+.center {margin:0 auto;}
+.clear {clear:both;}
+.clearfix {overflow:visible;}
+.clearfix:after {
+  content:".";
+  display:block;
+  height:0;
+  font-size:0;
+  clear:both;
+  visibility:hidden;
+}
+
+
+/*-------------------------------------------*/
+/* ボックス化                                */
+/*-------------------------------------------*/
+
+/* jQueryの「.show() .hide()」対策のため、    */
+/*「!important」は使わず、「#BODY ～」としている */
+#BODY .block {display:block;}
+#BODY .block:hover {text-decoration:none;}
+#BODY .iblock {display:inline-block;}
+#BODY .iblock:hover {text-decoration:none;}
+#BODY .tcell {display:table-cell;}
+#BODY .tcell:hover {text-decoration:none;}
+
+
+/* 表示・非表示
+-----------------------------------------*/
+
+#BODY .hidden {display:none;}
+#BODY .pc-hidden {display:none;}
+
+
+.scrollx {
+  display: block;
+  width: auto;
+  position: relative;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+
+/*-------------------------------------------*/
+/* ポジション                                */
+/*-------------------------------------------*/
+.relative {position:relative;}
+.absolute {position:absolute;}
+.static {position:static;}
+.fixed {position:fixed;}
+
+
+
+/*-------------------------------------------*/
+/* リンクをボックス化                        */
+/* ※リンクにしたい要素に指定。HTML5では不要 */
+/*-------------------------------------------*/
+.boxlink {
+  display:block;
+  position:relative;
+  transition:all 0.2s ease-in-out;
+}
+.boxlink:hover {
+  opacity:0.8;
+  filter:alpha(opacity=80);
+  zoom:1;
+}
+.boxlink a {
+  position:absolute;
+  display:block;
+  z-index:100;
+  top:0px;
+  left:0px;
+  text-indent:-1000em;
+  width:100%;
+  height:100%;
+  text-decoration:none;
+  background-color:#FFF;
+  opacity:0;
+  filter:alpha(opacity=0);
+  zoom:1;
+  cursor:pointer;
+}

@@ -1,0 +1,86 @@
+
+/*===========================================*/
+/* 全般
+/*===========================================*/
+
+/* リンクスタイル
+-----------------------------------------*/
+a,
+a:link,
+a:visited,
+a:active {
+  color: $link-color;
+  text-decoration:none;
+  transition: $default-transition;
+}
+a:visited {
+  color:$link-color-visited;
+}
+a:hover {
+  text-decoration:underline;
+}
+
+
+/* 画像
+-----------------------------------------*/
+img {
+  border:0;
+  vertical-align: bottom;
+}
+
+/* 見出し要素
+-----------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-weight:bold;
+  margin:0;
+  position:relative;
+}
+h1 {
+  font-size:1.6rem;
+}
+h2 {
+  font-size:1.4rem;
+}
+h3 {
+  font-size:1.2rem;
+  margin:0 0 10px;
+}
+h4 {
+  font-size:1.1rem;
+}
+h5 {
+  font-size:1rem;
+}
+h6 {
+  font-size:1rem;
+}
+
+/* インライン要素など
+-----------------------------------------*/
+del {
+  text-decoration:line-through;
+}
+em {
+  font-weight:bold;
+  text-decoration:none;
+  font-style:normal;
+}
+strong {
+  font-weight:bold;
+  text-decoration:none;
+  font-style:normal;
+}
+sup {
+  vertical-align: super;
+  font-size:0.7rem;
+  position: relative;
+  line-height:1;
+  top:1px;
+}
+
+hr {
+  border:none;
+  border-bottom:1px solid #CCC;
+  margin:20px 10px;
+  clear:both;
+}

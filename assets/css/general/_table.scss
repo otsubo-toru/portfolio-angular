@@ -1,0 +1,413 @@
+
+
+
+
+
+/*-------------------------------------------*/
+/* テーブル関係                              */
+/*-------------------------------------------*/
+.table {
+  width:100%;
+  border:1px solid #999;
+  margin:0 0 2px;
+  caption {
+    font-family:"メイリオ", Meiryo, Osaka, sans-serif;
+    text-align:left;
+    font-weight:bold;
+    font-size:1em;
+  }
+  caption .el-supplement {
+    @extend %t-supplement;
+    font-weight:normal;
+    margin-left:1em;
+  }
+  td, th {
+    border:1px solid #BBB;
+    padding:3px 8px;
+    text-align:center;
+  }
+  th {
+    background-color:#E5E5E5;
+    font-weight:normal;
+  }
+  .el-note-synbol {
+    font-size:11px;
+    color:#295DE8;
+  }
+}
+
+
+
+/* 見積もりフォーム  md-mitumori-form
+-------------------------------------------*/
+.table.md-mitumori-form {
+  width:94.8%;
+  margin:0 2.6%;
+  th, td {
+    padding:10px 8px;
+    transition:all 0.2s ease-in-out;
+  }
+  td {
+    text-align:left;
+    background-color:#FFF;
+  }
+  th {
+    width:8em;
+  }
+  .el-item-size {
+    display:inline-block;
+    *display:inline;
+    background-color:#F5F5F5;
+    padding:5px 8px;
+    border:1px solid #DDD;
+    &.md-width {
+    }
+    &.md-height {
+    }
+  }
+  td.is-error-validate {
+    box-shadow:1px 1px 0 0 #F00 inset, -1px -1px 0 0 #F00 inset;
+  }
+}
+
+
+
+/* サブ  md-sub
+-------------------------------------------*/
+.table.md-sub {
+  caption {
+    font-size:13px;
+    color:#444;
+  }
+  th, td {
+    padding:3px 5px;
+    font-size:12px;
+    color:#444;
+  }
+  td {
+  }
+  th {
+  }
+}
+
+/* 左寄せ  md-left-align
+-------------------------------------------*/
+.table.md-left-align {
+  th, td {
+    text-align:left;
+  }
+  td {
+  }
+  th {
+    text-align:center;
+  }
+}
+
+
+/* 中央寄せ  md-center-align
+-------------------------------------------*/
+.table.md-center-align {
+  th, td {
+    text-align:center;
+  }
+  td {
+  }
+  th {
+    text-align:center;
+  }
+}
+
+
+
+/* 補足・参考用テーブル  md-supplement
+-------------------------------------------*/
+.table.md-supplement {
+  caption {
+    color:#555;
+    font-size:13px;
+  }
+  th, td {
+    font-size:12px;
+    border:1px solid #BBB;
+    padding:3px 5px;
+  }
+  th {
+    background-color:#A1A1A1;
+    color:#FFF;
+  }
+  td {
+    background-color:#EEE;
+    color:#666;
+  }
+}
+
+/* 商品情報  md-data
+-------------------------------------------*/
+.table.md-data {
+  th, td {
+    padding:4px 8px;
+  }
+  td {
+    text-align:left;
+    background-color:#FFF;
+  }
+  td.el-kinou img {
+    vertical-align:middle;
+    margin:0 3px 3px 0;
+  }
+  th {
+    width:8em;
+  }
+}
+
+
+/* 価格表  md-price
+-------------------------------------------*/
+.table.md-price {
+  td, th {
+    padding:3px 5px;
+    text-align:center;
+  }
+  td {
+    background-color:#FFF;
+  }
+  th {
+  }
+  .el-maker-price,
+  .el-before-price {
+    color:#888;
+    font-weight:normal;
+    text-decoration:line-through;
+  }
+  .el-price {
+    color:#C63329;
+    font-weight:bold;
+  }
+  .el-price.md-none {
+    color:#666;
+    font-weight:normal;
+  }
+  td.el-estimate {
+    padding:10px;
+  }
+  td.bg01 {
+    background:#FFA;
+  }
+  .el-price.md-note01,
+  .td-note01 {
+    background-color:#FBFCB7;
+  }
+  .td-note02 {
+    background-color:#DCFFF1;
+  }
+}
+
+
+
+/* サイズの目安  md-size
+-------------------------------------------*/
+.table.md-size {
+  caption {
+    color:#444;
+  }
+  th, td {
+    font-size:12px;
+    border:1px solid #AAA;
+    padding:2px;
+  }
+  th {
+    background-color:#999;
+    color:#FFF;
+  }
+  td {
+    background-color:#EEE;
+    color:#666;
+  }
+  .el-size {
+    display:block;
+    background-color:#EEE;
+    color:#666;
+    font-size:12px;
+  }
+}
+
+
+/* セット一覧 md-set
+-------------------------------------------*/
+.table.md-set {
+  caption {
+    font-size:13px;
+    color:#666;
+  }
+  th, td {
+    font-size:12px;
+    color:#666;
+    border:1px solid #CCC;
+  }
+  td {
+    background-color:#EEE;
+  }
+  th {
+    background-color:#AAA;
+    color:#FFF;
+  }
+  .el-name {
+    width:10em;
+    font-weight:normal;
+  }
+}
+
+
+/* 見積もりフォーム記入例 md-guide-form
+-------------------------------------------*/
+.table.md-guide-form {
+  width:96%;
+  margin:0 2%;
+  th, td {
+    padding:4px 8px;
+  }
+  th {
+    width:6em;
+  }
+  td {
+    text-align:left;
+  }
+}
+
+
+
+
+/* テーブルレイアウト  md-table-layout
+-------------------------------------------*/
+.table.md-table-layout {
+  border:none;
+  th, td {
+    background-color:transparent;
+    border:none;
+  }
+  th {
+    background-color:transparent;
+  }
+  th,
+  td {
+    background-color:transparent;
+    border:none;
+  }
+  th {
+    background-color:transparent;
+  }
+}
+
+/* テーブル幅オート  md-w-auto
+-------------------------------------------*/
+.table.md-w-auto {
+  width:auto !important;
+}
+
+
+
+
+
+/*
+-------------------------------------------*/
+.table.md-scrollx {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  border:none;
+  caption {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+  thead {
+    display: block;
+    float: left;
+  }
+  tbody {
+    display: block;
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  /*
+  tbody::-webkit-scrollbar {
+    height: 5px;
+  }
+  tbody::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: #eee;
+  }
+  tbody::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #666;
+  }
+  */
+  thead tr {
+    display: block;
+  }
+  th,
+  td {
+    display: block;
+    vertical-align:middle;
+  }
+  tbody tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  /* borderの調整 */
+  th,
+  td {
+    padding:4px 8px;
+    border-bottom: 0;
+  }
+  thead th:first-child,
+  tbody th:first-child {
+  }
+  tbody th,
+  td {
+    border-left: 0;
+    border-right: 0;
+  }
+  tbody tr {
+    border-right: 1px solid #babcbf;
+  }
+  th:last-child,
+  td:last-child {
+    border-bottom: 1px solid #babcbf;
+  }
+}
+
+
+
+
+/* TH調整  md-th-◯em
+-------------------------------------------*/
+.table.md-th-1em th {width:1em !important;}
+.table.md-th-2em th {width:2em !important;}
+.table.md-th-3em th {width:3em !important;}
+.table.md-th-4em th {width:4em !important;}
+.table.md-th-5em th {width:5em !important;}
+.table.md-th-6em th {width:6em !important;}
+.table.md-th-7em th {width:7em !important;}
+.table.md-th-8em th {width:8em !important;}
+.table.md-th-9em th {width:9em !important;}
+.table.md-th-10em th {width:10em !important;}
+.table.md-th-11em th {width:11em !important;}
+.table.md-th-12em th {width:12em !important;}
+.table.md-th-13em th {width:13em !important;}
+.table.md-th-14em th {width:14em !important;}
+.table.md-th-15em th {width:15em !important;}
+.table.md-th-16em th {width:16em !important;}
+.table.md-th-17em th {width:17em !important;}
+.table.md-th-18em th {width:18em !important;}
+.table.md-th-19em th {width:19em !important;}
+.table.md-th-20em th {width:20em !important;}
+
+
+.table.md-td-ph05 td {padding-top:5px;padding-bottom:5px;}
+.table.md-td-ph10 td {padding-top:10px;padding-bottom:10px;}

@@ -1,0 +1,34 @@
+
+
+
+
+$default-font: "メイリオ", Meiryo, Osaka, sans-serif;
+$legacy-font: "ＭＳ Ｐゴシック", "MS P Gothic",  Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro" sans-serif;
+
+
+$main-width: 100%; //76%;
+$sidebar-width: 20%;
+
+
+// $main-color: #60B353;
+$main-color: #9e876e;
+
+$link-color: #005C9C;
+$link-color-visited: #880088;
+$price-color: #C63329;
+
+
+$default-transition: all 0.2s ease-in-out;
+
+
+%indent {
+  text-indent:-1em;
+  margin-left:1em;
+}
+%t-supplement {
+  color:#666;
+  font-size:12px;
+}
+%transition {
+  transition:all 0.2s ease-in-out;
+}
