@@ -531,7 +531,7 @@ form .field_with_errors {
 /*layout*/
 /*=========================================*/
 /*-------------------------------------------*/
-/* 全体レイアウト                            */
+/* 全体レイアウト
 /*-------------------------------------------*/
 body {
   font-size: 100%;
@@ -555,7 +555,8 @@ body {
 /* ヘッダー
 /*-------------------------------------------*/
 .header {
-  background-color: #FFF;
+  background-color: #FDFDFD;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
   transition: all 0.4s linear;
 }
 
@@ -583,9 +584,17 @@ body {
 }
 
 .header .site-name {
-  color: #888;
-  font-size: 2.5em;
-  font-weight: bold;
+  font-family: "Muli", sans-serif;
+  color: #AAA;
+  font-size: 3em;
+  font-weight: normal;
+  margin: 5px 0;
+}
+
+.header .site-name .el-sub-title {
+  font-size: 1.8rem;
+  color: #CCC;
+  margin-left: 1.5rem;
 }
 
 .header.transform {
@@ -631,18 +640,19 @@ body {
 }
 
 .gnav .gnav-item > a {
+  font-family: "Muli", sans-serif;
   display: block;
-  padding: 20px 10px 5px;
+  padding: 12px 10px 8px;
   text-align: left;
   color: #888;
-  font-size: 1rem;
-  border-bottom: 3px solid #999;
+  font-size: 1.1rem;
+  border-bottom: 3px solid #2987D8;
 }
 
 .gnav .gnav-item > a:hover {
   text-decoration: none;
-  color: #555;
-  border-color: #2987D8;
+  color: #444;
+  border-color: #D84629;
 }
 
 .gnav .gnav-item-link {
@@ -659,7 +669,7 @@ body {
 /*-------------------------------------------*/
 .main {
   margin: 20px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .main .main-container {
@@ -4694,30 +4704,46 @@ ul.notes.md-example li {
   padding: 0;
 }
 
-/* md-article-top
+/* md-article
 -------------------------------------------*/
-.heading.md-article-top {
-  font-size: 34px;
+.heading.md-article {
+  font-size: 2rem;
+  line-height: 1.3;
+  margin: 0 0 15px;
+}
+
+.heading.md-article .el-sub-title {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #555;
+  margin-left: 1rem;
+}
+
+/* md-item-top
+-------------------------------------------*/
+.heading.md-item-top {
+  font-size: 2rem;
   border-left: 10px solid #9e876e;
   padding: 3px 0px 3px 7px;
   line-height: 1.3;
   margin: 0 0 15px;
 }
 
-.heading.md-article-top h2 {
+.heading.md-item-top h2 {
   font-size: 34px;
 }
 
-.heading.md-article-top .el-sub-title,
-.heading.md-article-top h2 .el-sub-title {
+.heading.md-item-top .el-sub-title,
+.heading.md-item-top h2 .el-sub-title {
   display: block;
   font-size: 18px;
   font-weight: bold;
   color: #444;
 }
 
-.heading.md-article-top .el-title-detail,
-.heading.md-article-top h2 .el-title-detail {
+.heading.md-item-top .el-title-detail,
+.heading.md-item-top h2 .el-title-detail {
   display: inline;
   font-size: 20px;
   font-weight: bold;
@@ -4729,21 +4755,21 @@ ul.notes.md-example li {
 
 /* md-article-top-small
 -------------------------------------------*/
-.heading.md-article-top-small {
+.heading.md-item-top-small {
   border-left: 8px solid #9e876e;
   padding: 4px 0 2px 7px;
   font-size: 24px;
   margin: 0 0 5px;
 }
 
-.heading.md-article-top-small .el-sub-title {
+.heading.md-item-top-small .el-sub-title {
   display: block;
   font-size: 15px;
   font-weight: bold;
   color: #444;
 }
 
-.heading.md-article-top-small .el-title-detail {
+.heading.md-item-top-small .el-title-detail {
   display: inline;
   font-size: 15px;
   font-weight: bold;
@@ -4891,10 +4917,10 @@ ul.notes.md-example li {
 /* md-main
 -------------------------------------------*/
 .heading.md-main {
-  border-bottom: 1px solid #888;
-  font-size: 16px;
-  margin: 0 0 10px;
-  padding: 0;
+  border-bottom: 2px solid #AAA;
+  font-size: 1.4rem;
+  margin: 0 0 20px;
+  padding: 2px 5px;
 }
 
 .heading.md-main img {
@@ -4902,7 +4928,7 @@ ul.notes.md-example li {
 }
 
 .heading.md-main .el-sub-title {
-  font-size: 13px;
+  font-size: 1rem;
   color: #555;
   margin: 0 0 0 1.5em;
   padding: 0;

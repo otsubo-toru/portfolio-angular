@@ -12,13 +12,16 @@
   <meta name="robots" content="noindex,nofollow">
   <base href="https://otsubo-toru.github.io/portfolio-angular/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
 
   <link rel="stylesheet" href="./assets/css/fontello/css/fontello.css">
   <link rel="stylesheet" href="./assets/css/fontello/css/animation.css">
   <!--[if IE 7]>
   <link rel="stylesheet" href="./assets/css/fontello/css/fontello-ie7.css">
   <![endif]-->
+
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="./assets/js/aos/aos.css">
   <link rel="stylesheet" type="text/css" href="./assets/js/swiper/swiper.css">
   <link rel="stylesheet" type="text/css" href="./assets/js/baguetteBox/baguetteBox.css">
@@ -32,8 +35,17 @@
 
 <body>
 <div id="PAGE" class="page">
-  <app-header></app-header>
-  <app-gnav></app-gnav>
+  <header id="HEADER" class="header">
+    <div class="header-container container">
+      <app-header></app-header>
+    </div>
+    <nav id="GNAV" class="gnav">
+      <div class="gnav-container container">
+        <app-gnav></app-gnav>
+      </div>
+    </nav>
+  </header>
+
   <div id="MAIN" class="main">
       <!--@include('components.sidebar')-->
 			<div id="MAIN_CONTAINER" class="main-container container">
@@ -87,5 +99,5 @@ $(function() {
 
 });
 </script>
-<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.1e04665e16f944715fd2.js" nomodule></script><script type="text/javascript" src="polyfills.8bbb231b43165d65d357.js"></script><script type="text/javascript" src="main.f0d07548103c7dcc2aff.js"></script></body>
+<script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script><script type="text/javascript" src="es2015-polyfills.1e04665e16f944715fd2.js" nomodule></script><script type="text/javascript" src="polyfills.8bbb231b43165d65d357.js"></script><script type="text/javascript" src="main.9fc2c371d70bbfdae171.js"></script></body>
 </html>
